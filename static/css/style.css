@@ -1,0 +1,526 @@
+/* AFG Bank Assistant - Clean White Design with AFG Branding */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* AFG Brand Colors */
+    --afg-blue: #002855;
+    --afg-green: #00B140;
+    --afg-red: #E30613;
+
+    /* Theme Colors - Light/White */
+    --primary-color: var(--afg-green);
+    --secondary-color: var(--afg-blue);
+    --accent-color: var(--afg-red);
+    --bg-color: #ffffff;
+    --surface-color: #f8f9fa;
+    --text-color: #212529;
+    --text-secondary: #6c757d;
+    --border-color: #dee2e6;
+    --user-bg: #e7f5ec;
+    --assistant-bg: #ffffff;
+    --input-bg: #ffffff;
+    --shadow: 0 2px 8px rgba(0, 40, 85, 0.08);
+    --shadow-hover: 0 4px 12px rgba(0, 177, 64, 0.15);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Header with AFG Logo */
+.chat-header {
+    background: white;
+    padding: 1.25rem 2rem;
+    border-bottom: 2px solid var(--afg-green);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-content::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url('/static/img/afg_logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header-content h1 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--afg-blue);
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 0.875rem;
+    color: var(--afg-green);
+    margin-top: 0.25rem;
+    font-weight: 500;
+}
+
+.header-controls {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.docs-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: white;
+    color: var(--afg-blue);
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+.docs-btn:hover {
+    background: var(--surface-color);
+    border-color: var(--afg-green);
+    color: var(--afg-green);
+}
+
+.model-selector {
+    position: relative;
+}
+
+.model-btn {
+    background: white;
+    border: 2px solid var(--afg-green);
+    color: var(--afg-green);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.model-btn:hover {
+    background: var(--afg-green);
+    color: white;
+    box-shadow: var(--shadow-hover);
+}
+
+.model-btn.active {
+    background: var(--afg-green);
+    color: white;
+}
+
+.clear-btn {
+    background: transparent;
+    border: 2px solid var(--border-color);
+    color: var(--text-secondary);
+    padding: 0.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clear-btn:hover {
+    background: var(--surface-color);
+    border-color: var(--afg-red);
+    color: var(--afg-red);
+}
+
+/* Messages Container */
+.messages-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 2rem;
+    background: var(--surface-color);
+    scroll-behavior: smooth;
+}
+
+.messages-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.messages-container::-webkit-scrollbar-track {
+    background: var(--surface-color);
+}
+
+.messages-container::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+
+.messages-container::-webkit-scrollbar-thumb:hover {
+    background: var(--text-secondary);
+}
+
+/* Message Styles */
+.message {
+    margin-bottom: 1.5rem;
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.message-content {
+    display: flex;
+    gap: 1rem;
+    max-width: 100%;
+}
+
+.message-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+    font-weight: 600;
+}
+
+.user-message .message-avatar {
+    background: var(--afg-blue);
+    color: white;
+}
+
+.assistant-message .message-avatar {
+    background: var(--afg-green);
+    color: white;
+}
+
+.message-text {
+    flex: 1;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: white;
+    padding: 1rem 1.25rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.user-message .message-text {
+    background: var(--user-bg);
+    border-left: 3px solid var(--afg-blue);
+}
+
+.assistant-message .message-text {
+    background: white;
+    border-left: 3px solid var(--afg-green);
+}
+
+.message-text p {
+    margin-bottom: 0.75rem;
+}
+
+.message-text p:last-child {
+    margin-bottom: 0;
+}
+
+.message-time {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-top: 0.5rem;
+}
+
+/* Suggestions */
+.suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.suggestion-chip {
+    background: white;
+    border: 2px solid var(--afg-green);
+    color: var(--afg-green);
+    padding: 0.625rem 1.25rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.suggestion-chip:hover {
+    background: var(--afg-green);
+    color: white;
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-2px);
+}
+
+/* Loading Indicator */
+.loading-indicator {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.typing-indicator {
+    display: flex;
+    gap: 0.35rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+.typing-indicator span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--afg-green);
+    animation: typing 1.4s infinite;
+}
+
+.typing-indicator span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing-indicator span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes typing {
+    0%, 60%, 100% {
+        opacity: 0.3;
+        transform: translateY(0);
+    }
+    30% {
+        opacity: 1;
+        transform: translateY(-8px);
+    }
+}
+
+/* Input Area */
+.input-container {
+    padding: 1.5rem 2rem;
+    background: white;
+    border-top: 1px solid var(--border-color);
+}
+
+.input-wrapper {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-end;
+    max-width: 100%;
+    margin: 0 auto;
+    background: white;
+    border: 2px solid var(--afg-green);
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    transition: all 0.2s;
+}
+
+.input-wrapper:focus-within {
+    box-shadow: 0 0 0 3px rgba(0, 177, 64, 0.1);
+}
+
+#messageInput {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    resize: none;
+    outline: none;
+    max-height: 200px;
+    font-family: inherit;
+}
+
+#messageInput::placeholder {
+    color: var(--text-secondary);
+}
+
+.send-btn {
+    background: var(--afg-green);
+    border: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.send-btn:hover:not(:disabled) {
+    background: #009635;
+    transform: scale(1.05);
+    box-shadow: var(--shadow-hover);
+}
+
+.send-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .chat-header {
+        padding: 1rem;
+    }
+
+    .header-content h1 {
+        font-size: 1.125rem;
+    }
+
+    .messages-container {
+        padding: 1rem;
+    }
+
+    .input-container {
+        padding: 1rem;
+    }
+
+    .suggestions {
+        flex-direction: column;
+    }
+
+    .suggestion-chip {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Error Messages */
+.error-message {
+    background: #fff5f5;
+    border: 2px solid var(--afg-red);
+    color: #c92a2a;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* Code blocks */
+.message-text pre {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    overflow-x: auto;
+    margin: 0.5rem 0;
+}
+
+.message-text code {
+    font-family: 'Courier New', monospace;
+    font-size: 0.875rem;
+}
+
+/* Lists */
+.message-text ul,
+.message-text ol {
+    margin-left: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.message-text li {
+    margin-bottom: 0.25rem;
+}
+
+/* Model dropdown */
+.model-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 0.5rem;
+    background: white;
+    border: 2px solid var(--afg-green);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    z-index: 1000;
+    display: none;
+}
+
+.model-dropdown.show {
+    display: block;
+}
+
+.model-option {
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.model-option:last-child {
+    border-bottom: none;
+}
+
+.model-option:hover {
+    background: var(--surface-color);
+}
+
+.model-option.active {
+    background: var(--afg-green);
+    color: white;
+    font-weight: 600;
+}
+
+.model-option-name {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.model-option-desc {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.model-option.active .model-option-desc {
+    color: rgba(255, 255, 255, 0.9);
+}

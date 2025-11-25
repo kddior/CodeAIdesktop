@@ -1,0 +1,2822 @@
+[
+  {
+    "section": "",
+    "subsection": "",
+    "service": "(Tarif en vigueur au 01/03/2024 - Taux de Base Bancaire (TBB)",
+    "amount": 10.75,
+    "currency": "%",
+    "note": "",
+    "raw_line": "(Tarif en vigueur au 01/03/2024 - Taux de Base Bancaire (TBB): 10,75% HT depuis 01/01/2017)",
+    "line_number": 3
+  },
+  {
+    "section": "1. CONDITIONS GENERALES DU COMPTE",
+    "subsection": "1.1. Conditions d'ouverture du compte",
+    "service": "Compte chèques",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "Compte chèques: Gratuit",
+    "line_number": 11
+  },
+  {
+    "section": "1. CONDITIONS GENERALES DU COMPTE",
+    "subsection": "1.1. Conditions d'ouverture du compte",
+    "service": "Compte épargne Classique",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "Compte épargne Classique: Gratuit",
+    "line_number": 12
+  },
+  {
+    "section": "1. CONDITIONS GENERALES DU COMPTE",
+    "subsection": "1.1. Conditions d'ouverture du compte",
+    "service": "Dépôt à terme",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "Dépôt à terme: Gratuit",
+    "line_number": 13
+  },
+  {
+    "section": "1. CONDITIONS GENERALES DU COMPTE",
+    "subsection": "1.1. Conditions d'ouverture du compte",
+    "service": "Plan Épargne",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "Plan Épargne: Gratuit",
+    "line_number": 14
+  },
+  {
+    "section": "1. CONDITIONS GENERALES DU COMPTE",
+    "subsection": "1.2. Conditions de clôture de compte",
+    "service": "Compte chèques",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "Compte chèques: Gratuit",
+    "line_number": 18
+  },
+  {
+    "section": "1. CONDITIONS GENERALES DU COMPTE",
+    "subsection": "1.2. Conditions de clôture de compte",
+    "service": "Compte épargne Classique",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "Compte épargne Classique: Gratuit",
+    "line_number": 19
+  },
+  {
+    "section": "1. CONDITIONS GENERALES DU COMPTE",
+    "subsection": "1.2. Conditions de clôture de compte",
+    "service": "Dépôt à terme",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "Dépôt à terme: Gratuit",
+    "line_number": 20
+  },
+  {
+    "section": "1. CONDITIONS GENERALES DU COMPTE",
+    "subsection": "1.2. Conditions de clôture de compte",
+    "service": "Plan Épargne",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "Plan Épargne: Gratuit",
+    "line_number": 21
+  },
+  {
+    "section": "1. CONDITIONS GENERALES DU COMPTE",
+    "subsection": "1.2. Conditions de clôture de compte",
+    "service": "Lettre de clôture juridique",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "Lettre de clôture juridique: Gratuit",
+    "line_number": 22
+  },
+  {
+    "section": "1. CONDITIONS GENERALES DU COMPTE",
+    "subsection": "1.2. Conditions de clôture de compte",
+    "service": "Attestation de clôture de compte",
+    "amount": 50000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "**Attestation de clôture de compte: 50 000 XOF**",
+    "line_number": 23
+  },
+  {
+    "section": "1. CONDITIONS GENERALES DU COMPTE",
+    "subsection": "1.2. Conditions de clôture de compte",
+    "service": "Autres types de clôture de compte",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "Autres types de clôture de compte: Gratuit",
+    "line_number": 24
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.1. Conditions débitrices de frais",
+    "service": "Meilleur taux débiteur appliqué à la clientèle",
+    "amount": null,
+    "currency": "",
+    "note": "A négocier",
+    "raw_line": "- Meilleur taux débiteur appliqué à la clientèle: A négocier",
+    "line_number": 34
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.1. Conditions débitrices de frais",
+    "service": "Commission de plus fort découvert",
+    "amount": 0.2,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission de plus fort découvert: 0,20%",
+    "line_number": 35
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.1. Conditions débitrices de frais",
+    "service": "Commission de mouvement au debit du compte",
+    "amount": 0.2,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission de mouvement au debit du compte: 0,20%",
+    "line_number": 36
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.1. Conditions débitrices de frais",
+    "service": "Commission de dépassement sur compte autorisé",
+    "amount": 1.0,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission de dépassement sur compte autorisé: 1%",
+    "line_number": 37
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.1. Conditions débitrices de frais",
+    "service": "Commission de dépassement sur compte non autorisé",
+    "amount": 1.0,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission de dépassement sur compte non autorisé: 1% minimum 10 000 XOF",
+    "line_number": 38
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.2. Autres types de conditions débitrices de frais",
+    "service": "Frais de forçage",
+    "amount": 5000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de forçage: 5 000 XOF",
+    "line_number": 41
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.2. Autres types de conditions débitrices de frais",
+    "service": "Frais Procuration sur compte",
+    "amount": 5000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais Procuration sur compte: 5 000 XOF",
+    "line_number": 42
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.3. Frais de tenue de compte",
+    "service": "Grandes Entreprises",
+    "amount": 35000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Grandes Entreprises: 35 000 XOF",
+    "line_number": 45
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.3. Frais de tenue de compte",
+    "service": "PME/PMI",
+    "amount": 25000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- PME/PMI: 25 000 XOF",
+    "line_number": 46
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.3. Frais de tenue de compte",
+    "service": "Administrations",
+    "amount": 20000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Administrations: 20 000 XOF",
+    "line_number": 47
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.3. Frais de tenue de compte",
+    "service": "Institutions",
+    "amount": 35000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Institutions: 35 000 XOF",
+    "line_number": 48
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.3. Frais de tenue de compte",
+    "service": "Associations",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Associations: 10 000 XOF",
+    "line_number": 49
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.3. Frais de tenue de compte",
+    "service": "Relevé d'Identité Bancaire",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Relevé d'Identité Bancaire: Gratuit",
+    "line_number": 50
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.5. Relevé de compte et Attestations",
+    "service": "Mensuel",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Mensuel: Gratuit",
+    "line_number": 55
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.5. Relevé de compte et Attestations",
+    "service": "A la demande",
+    "amount": 5000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- A la demande: 5 000 XOF / page",
+    "line_number": 56
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.5. Relevé de compte et Attestations",
+    "service": "Relevé récapitulatif des frais annuels",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Relevé récapitulatif des frais annuels: Gratuit",
+    "line_number": 57
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.5. Relevé de compte et Attestations",
+    "service": "ATTESTATIONS (Prix différents selon le type)",
+    "amount": null,
+    "currency": "",
+    "note": "**",
+    "raw_line": "**ATTESTATIONS (Prix différents selon le type):**",
+    "line_number": 59
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.5. Relevé de compte et Attestations",
+    "service": "Attestations Bancaires",
+    "amount": 110000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Attestations Bancaires: 110 000 XOF",
+    "line_number": 60
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.5. Relevé de compte et Attestations",
+    "service": "Attestations de solde",
+    "amount": 50000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Attestations de solde: 50 000 XOF",
+    "line_number": 61
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.5. Relevé de compte et Attestations",
+    "service": "Attestation de non engagement",
+    "amount": 50000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Attestation de non engagement: 50 000 XOF",
+    "line_number": 62
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.5. Relevé de compte et Attestations",
+    "service": "Attestation de redevance",
+    "amount": 50000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Attestation de redevance: 50 000 XOF",
+    "line_number": 63
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.5. Relevé de compte et Attestations",
+    "service": "Attestation de redevance (en cas de rachat de créances)",
+    "amount": 50000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Attestation de redevance (en cas de rachat de créances): 50 000 XOF",
+    "line_number": 64
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.5. Relevé de compte et Attestations",
+    "service": "Attestation de non redevance",
+    "amount": 50000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Attestation de non redevance: 50 000 XOF",
+    "line_number": 65
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.5. Relevé de compte et Attestations",
+    "service": "Attestation de capacité financière",
+    "amount": 110000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Attestation de capacité financière: 110 000 XOF",
+    "line_number": 66
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.5. Relevé de compte et Attestations",
+    "service": "Attestation de ligne de crédit",
+    "amount": 110000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Attestation de ligne de crédit: 110 000 XOF",
+    "line_number": 67
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.5. Relevé de compte et Attestations",
+    "service": "Attestation bancaire de préfinancement",
+    "amount": 110000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Attestation bancaire de préfinancement: 110 000 XOF",
+    "line_number": 68
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.5. Relevé de compte et Attestations",
+    "service": "Attestation de solvabilité",
+    "amount": 50000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Attestation de solvabilité: 50 000 XOF",
+    "line_number": 69
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.5. Relevé de compte et Attestations",
+    "service": "Attestation de clôture",
+    "amount": 50000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- **Attestation de clôture: 50 000 XOF**",
+    "line_number": 70
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.5. Relevé de compte et Attestations",
+    "service": "Autres type d'attestations bancaires",
+    "amount": 50000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Autres type d'attestations bancaires: 50 000 XOF",
+    "line_number": 71
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.5. Relevé de compte et Attestations",
+    "service": "Attestation de virement permanent et irrévocable",
+    "amount": 50000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Attestation de virement permanent et irrévocable: 50 000 XOF",
+    "line_number": 72
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.5. Relevé de compte et Attestations",
+    "service": "Duplicata d'attestations",
+    "amount": null,
+    "currency": "",
+    "note": "Au réel",
+    "raw_line": "- Duplicata d'attestations: Au réel",
+    "line_number": 73
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.1.5. Relevé de compte et Attestations",
+    "service": "Frais de timbre (Taxe) pour versement d'espèces en compte",
+    "amount": 100.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de timbre (Taxe) pour versement d'espèces en compte: 100 XOF",
+    "line_number": 74
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.1. Chèques",
+    "service": "Délivrance de chéquiers",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Délivrance de chéquiers: Gratuit",
+    "line_number": 82
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.1. Chèques",
+    "service": "Chèques barrés non endossables",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Chèques barrés non endossables: Gratuit",
+    "line_number": 83
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.1. Chèques",
+    "service": "Chèques non barrés / vignette",
+    "amount": 20.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Chèques non barrés / vignette: 20 XOF/feuillet",
+    "line_number": 84
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.1. Chèques",
+    "service": "Lettre chèques Modèle standard",
+    "amount": 200050.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Lettre chèques Modèle standard: 2 000 XOF pour 50 feuillets",
+    "line_number": 85
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.1. Chèques",
+    "service": "Lettre chèques Modèle spécifique (à la demande du client)",
+    "amount": null,
+    "currency": "",
+    "note": "selon facture du facturier",
+    "raw_line": "- Lettre chèques Modèle spécifique (à la demande du client): selon facture du facturier",
+    "line_number": 86
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.1. Chèques",
+    "service": "Chèque de banque sur place",
+    "amount": 15000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Chèque de banque sur place: 15 000 XOF",
+    "line_number": 87
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.1. Chèques",
+    "service": "Chèque de banque UEMOA",
+    "amount": 15000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Chèque de banque UEMOA: 15 000 XOF",
+    "line_number": 88
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.1. Chèques",
+    "service": "Chèque de guichet",
+    "amount": 1000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Chèque de guichet: 1 000 XOF",
+    "line_number": 89
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.1. Chèques",
+    "service": "Certification de chèque",
+    "amount": 15000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Certification de chèque: 15 000 XOF",
+    "line_number": 90
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.1. Chèques",
+    "service": "Frais pour annulation de chèque de banque",
+    "amount": 15000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais pour annulation de chèque de banque: 15 000 XOF",
+    "line_number": 91
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.1. Chèques",
+    "service": "Opposition sur chèque ou chéquier par l'émetteur",
+    "amount": 15000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Opposition sur chèque ou chéquier par l'émetteur: 15 000 XOF",
+    "line_number": 92
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.1. Chèques",
+    "service": "Renouvellement d'opposition sur chèque ou chéquier",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Renouvellement d'opposition sur chèque ou chéquier: Gratuit",
+    "line_number": 93
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.1. Chèques",
+    "service": "Frais de destruction de chéquier",
+    "amount": 150006.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de destruction de chéquier: 15 000 XOF (après 6 mois de non réception ou à la demande)",
+    "line_number": 94
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.1. Chèques",
+    "service": "Frais d'impayé suite à l'absence ou l'insuffisance de provisions",
+    "amount": 35000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais d'impayé suite à l'absence ou l'insuffisance de provisions: 35 000 XOF",
+    "line_number": 95
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.1. Chèques",
+    "service": "Frais de commande de chéquiers en urgence",
+    "amount": 15000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de commande de chéquiers en urgence: 15 000 XOF",
+    "line_number": 96
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.1. Chèques",
+    "service": "Encaissement de chèques dans l'UEMOA",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Encaissement de chèques dans l'UEMOA: Gratuit",
+    "line_number": 97
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.1. Chèques",
+    "service": "Encaissement de chèques hors UEMOA",
+    "amount": 20000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Encaissement de chèques hors UEMOA: 20 000 XOF",
+    "line_number": 98
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.2. Cartes Bancaires",
+    "service": "Visa Business",
+    "amount": 727272.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Visa Business: 72 727 XOF/an (Moitié tarif pour la 2ème carte)",
+    "line_number": 102
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.2. Cartes Bancaires",
+    "service": "Frais de reconfection de la carte (sauf défectuosité)",
+    "amount": null,
+    "currency": "",
+    "note": "Cf. coût annuel de la carte",
+    "raw_line": "- Frais de reconfection de la carte (sauf défectuosité): Cf. coût annuel de la carte",
+    "line_number": 103
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.2. Cartes Bancaires",
+    "service": "Confection carte en urgence",
+    "amount": 90909.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Confection carte en urgence: 90 909 XOF",
+    "line_number": 104
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.2. Cartes Bancaires",
+    "service": "Réédition de code confidentiel",
+    "amount": 5000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Réédition de code confidentiel: 5 000 XOF",
+    "line_number": 105
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.2. Cartes Bancaires",
+    "service": "Demande d'autorisation de dépassement de plafond",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Demande d'autorisation de dépassement de plafond: 10 000 XOF",
+    "line_number": 106
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.2. Cartes Bancaires",
+    "service": "Opposition sur carte",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Opposition sur carte: 10 000 XOF",
+    "line_number": 107
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.2. Cartes Bancaires",
+    "service": "Levée d'opposition sur carte",
+    "amount": 5000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Levée d'opposition sur carte: 5 000 XOF",
+    "line_number": 108
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.2. Cartes Bancaires",
+    "service": "Consultation de solde AFG Bank",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Consultation de solde AFG Bank: Gratuit",
+    "line_number": 109
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.2. Cartes Bancaires",
+    "service": "Consultation de solde Banque Confrère",
+    "amount": 454.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Consultation de solde Banque Confrère: 454 XOF",
+    "line_number": 110
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.2. Cartes Bancaires",
+    "service": "Mini relevé",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Mini relevé: Gratuit",
+    "line_number": 111
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.2. Cartes Bancaires",
+    "service": "Retrait GAB confrère UEMOA",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Retrait GAB confrère UEMOA: Gratuit",
+    "line_number": 112
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.2. Cartes Bancaires",
+    "service": "Consultation de solde sur GAB confrère et dans l'UEMOA",
+    "amount": 454.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Consultation de solde sur GAB confrère et dans l'UEMOA: 454 XOF",
+    "line_number": 113
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.2. Cartes Bancaires",
+    "service": "Frais de retrait GAB à l'international",
+    "amount": 3.5,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Frais de retrait GAB à l'international: 3,5% par transaction (dont 0,6% de TTHU)",
+    "line_number": 114
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.2. Cartes Bancaires",
+    "service": "Frais d'achat TPE à l'international",
+    "amount": 3.0,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Frais d'achat TPE à l'international: 3% par transaction (dont 0,6% de TTHU)",
+    "line_number": 115
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.2. Cartes Bancaires",
+    "service": "Frais d'achat internet à l'international",
+    "amount": 3.0,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Frais d'achat internet à l'international: 3% par transaction (dont 0,6% de TTHU)",
+    "line_number": 116
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.2. Cartes Bancaires",
+    "service": "Consultation de solde sur GAB Visa à l'international",
+    "amount": 682.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Consultation de solde sur GAB Visa à l'international: 682 XOF",
+    "line_number": 117
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.3. Virements",
+    "service": "Domiciliation salaires",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Domiciliation salaires: Gratuit",
+    "line_number": 121
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.3. Virements",
+    "service": "Virement interne émis ou reçus (de compte à compte dans la même banque)",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Virement interne émis ou reçus (de compte à compte dans la même banque): Gratuit",
+    "line_number": 122
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.3. Virements",
+    "service": "Virement entre Agence en faveur d'un tiers",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Virement entre Agence en faveur d'un tiers: Gratuit",
+    "line_number": 123
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.3. Virements",
+    "service": "Virement dans l'UEMOA (papier) - Confrère SICA",
+    "amount": 3000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Virement dans l'UEMOA (papier) - Confrère SICA: 3 000 XOF",
+    "line_number": 124
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.3. Virements",
+    "service": "Virement dans l'UEMOA (papier) - Confrère RTGS",
+    "amount": 5000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Virement dans l'UEMOA (papier) - Confrère RTGS: 5 000 XOF",
+    "line_number": 125
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.3. Virements",
+    "service": "Encaissement de virements nationaux, communautaires et internationaux",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Encaissement de virements nationaux, communautaires et internationaux: Gratuit",
+    "line_number": 126
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.3. Virements",
+    "service": "Création de dossier",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Création de dossier: Gratuit",
+    "line_number": 129
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.3. Virements",
+    "service": "Exécution des opérations Interne",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Exécution des opérations Interne: Gratuit",
+    "line_number": 130
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.3. Virements",
+    "service": "Exécution des opérations Confrère SICA",
+    "amount": 3000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Exécution des opérations Confrère SICA: 3 000 XOF",
+    "line_number": 131
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.3. Virements",
+    "service": "Exécution des opérations Confrère RTGS",
+    "amount": 5000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Exécution des opérations Confrère RTGS: 5 000 XOF",
+    "line_number": 132
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.3. Virements",
+    "service": "Modification de virement permanent",
+    "amount": 5000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Modification de virement permanent: 5 000 XOF",
+    "line_number": 133
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.3. Virements",
+    "service": "Mise à disposition Domestique",
+    "amount": 15000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Mise à disposition Domestique: 15 000 XOF",
+    "line_number": 136
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.4. Prélèvements",
+    "service": "Création de dossier",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Création de dossier: Gratuit",
+    "line_number": 140
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.4. Prélèvements",
+    "service": "Exécution de l'opération",
+    "amount": 100.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Exécution de l'opération: 100 XOF/ligne sur prélèvement par support magnétique",
+    "line_number": 141
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.4. Prélèvements",
+    "service": "Paiement d'un prélèvement",
+    "amount": 100.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Paiement d'un prélèvement: 100 XOF/Ecriture (émetteur)",
+    "line_number": 142
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.4. Prélèvements",
+    "service": "Remise d'avis de prélèvement",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Remise d'avis de prélèvement: Gratuit",
+    "line_number": 143
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.4. Prélèvements",
+    "service": "Frais de prélèvement impayé",
+    "amount": 2000500.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de prélèvement impayé: 2 000 XOF/impayé (émetteur) - Compte Organisme: 500 XOF",
+    "line_number": 144
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.4. Prélèvements",
+    "service": "Rejet de prélèvement à l'initiative du client",
+    "amount": 2500.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Rejet de prélèvement à l'initiative du client: 2 500 XOF",
+    "line_number": 145
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.4. Prélèvements",
+    "service": "Forçage sur présentation prélèvement",
+    "amount": 5000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Forçage sur présentation prélèvement: 5 000 XOF",
+    "line_number": 146
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.5. Effets de commerce",
+    "service": "Frais de paiement d'effets",
+    "amount": 1000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de paiement d'effets: 1 000 XOF",
+    "line_number": 150
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.5. Effets de commerce",
+    "service": "Remise d'effet à l'encaissement",
+    "amount": 3000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Remise d'effet à l'encaissement: 3 000 XOF",
+    "line_number": 151
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.5. Effets de commerce",
+    "service": "Commission de bordereau",
+    "amount": 0.25,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission de bordereau: 0,25% min. 2 000 XOF",
+    "line_number": 152
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.5. Effets de commerce",
+    "service": "Commission de domiciliation",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Commission de domiciliation: Gratuit",
+    "line_number": 153
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.5. Effets de commerce",
+    "service": "Commission d'endos",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Commission d'endos: Gratuit",
+    "line_number": 154
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.5. Effets de commerce",
+    "service": "Intérêt",
+    "amount": null,
+    "currency": "",
+    "note": "TBB + Marge (A négocier)",
+    "raw_line": "- Intérêt: TBB + Marge (A négocier)",
+    "line_number": 155
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.5. Effets de commerce",
+    "service": "Port de lettre (effets non normalisés)",
+    "amount": 20000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Port de lettre (effets non normalisés): 20 000 XOF",
+    "line_number": 156
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.5. Effets de commerce",
+    "service": "Frais de protêt",
+    "amount": null,
+    "currency": "",
+    "note": "Au réel",
+    "raw_line": "- Frais de protêt: Au réel",
+    "line_number": 157
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.5. Effets de commerce",
+    "service": "Frais de prorogation d'échéance",
+    "amount": 5000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de prorogation d'échéance: 5 000 XOF",
+    "line_number": 158
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.5. Effets de commerce",
+    "service": "Opposition sur effet",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Opposition sur effet: 10 000 XOF",
+    "line_number": 159
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.5. Effets de commerce",
+    "service": "Impayés sur effet - Encaissement",
+    "amount": 8000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Impayés sur effet - Encaissement: 8 000 XOF",
+    "line_number": 160
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.5. Effets de commerce",
+    "service": "Impayés sur effet - Escompte",
+    "amount": 6000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Impayés sur effet - Escompte: 6 000 XOF",
+    "line_number": 161
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.5. Effets de commerce",
+    "service": "Frais de réclamation",
+    "amount": 5000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de réclamation: 5 000 XOF",
+    "line_number": 162
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.5. Effets de commerce",
+    "service": "Confirmation domiciliation effet",
+    "amount": 5000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Confirmation domiciliation effet: 5 000 XOF",
+    "line_number": 163
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.5. Effets de commerce",
+    "service": "Retrait d'effet de portefeuille (réclamation d'effet)",
+    "amount": 5000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Retrait d'effet de portefeuille (réclamation d'effet): 5 000 XOF",
+    "line_number": 164
+  },
+  {
+    "section": "2. SERVICES RATTACHES AU FONCTIONNEMENT DU COMPTE",
+    "subsection": "2.2.5. Effets de commerce",
+    "service": "Remis à l'escompte",
+    "amount": 0.25,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Remis à l'escompte: 0,25% (Mini: 2 000 XOF)",
+    "line_number": 165
+  },
+  {
+    "section": "3. SERVICES BANCAIRES",
+    "subsection": "3.2. Frais liés aux services bancaires",
+    "service": "Dépôt d'espèce dans la banque du client quel que soit le guichet",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Dépôt d'espèce dans la banque du client quel que soit le guichet: Gratuit",
+    "line_number": 173
+  },
+  {
+    "section": "3. SERVICES BANCAIRES",
+    "subsection": "3.2. Frais liés aux services bancaires",
+    "service": "Retrait d'espèce dans la banque du client quel que soit le guichet",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Retrait d'espèce dans la banque du client quel que soit le guichet: Gratuit",
+    "line_number": 174
+  },
+  {
+    "section": "3. SERVICES BANCAIRES",
+    "subsection": "3.2. Frais liés aux services bancaires",
+    "service": "Émission chèque de banque en FCFA",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Émission chèque de banque en FCFA: 10 000 XOF",
+    "line_number": 175
+  },
+  {
+    "section": "3. SERVICES BANCAIRES",
+    "subsection": "3.2. Frais liés aux services bancaires",
+    "service": "Demande d'opposition (Chèques)",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Demande d'opposition (Chèques): 10 000 XOF",
+    "line_number": 176
+  },
+  {
+    "section": "3. SERVICES BANCAIRES",
+    "subsection": "3.2. Frais liés aux services bancaires",
+    "service": "Avis à Tiers Détenteur (ATD)",
+    "amount": 50000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Avis à Tiers Détenteur (ATD): 50 000 XOF",
+    "line_number": 179
+  },
+  {
+    "section": "3. SERVICES BANCAIRES",
+    "subsection": "3.2. Frais liés aux services bancaires",
+    "service": "Protêt",
+    "amount": null,
+    "currency": "",
+    "note": "Au réel",
+    "raw_line": "- Protêt: Au réel",
+    "line_number": 180
+  },
+  {
+    "section": "3. SERVICES BANCAIRES",
+    "subsection": "3.2. Frais liés aux services bancaires",
+    "service": "Frais de circularisation",
+    "amount": 50000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de circularisation: 50 000 XOF",
+    "line_number": 181
+  },
+  {
+    "section": "3. SERVICES BANCAIRES",
+    "subsection": "3.2. Frais liés aux services bancaires",
+    "service": "Frais de saisie attribution - Avis à Tiers Détenteur (ATD)",
+    "amount": 50000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de saisie attribution - Avis à Tiers Détenteur (ATD): 50 000 XOF",
+    "line_number": 182
+  },
+  {
+    "section": "3. SERVICES BANCAIRES",
+    "subsection": "3.2. Frais liés aux services bancaires",
+    "service": "Frais de saisie conservatoire",
+    "amount": 50000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de saisie conservatoire: 50 000 XOF",
+    "line_number": 183
+  },
+  {
+    "section": "3. SERVICES BANCAIRES",
+    "subsection": "3.2. Frais liés aux services bancaires",
+    "service": "Changement de signature",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Changement de signature: Gratuit",
+    "line_number": 186
+  },
+  {
+    "section": "3. SERVICES BANCAIRES",
+    "subsection": "3.2. Frais liés aux services bancaires",
+    "service": "Modification d'intitulé de compte",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Modification d'intitulé de compte: Gratuit",
+    "line_number": 187
+  },
+  {
+    "section": "3. SERVICES BANCAIRES",
+    "subsection": "3.2. Frais liés aux services bancaires",
+    "service": "Changement d'éléments constitutifs du dossier du client",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Changement d'éléments constitutifs du dossier du client: Gratuit",
+    "line_number": 188
+  },
+  {
+    "section": "3. SERVICES BANCAIRES",
+    "subsection": "3.2. Frais liés aux services bancaires",
+    "service": "Changement de garde de titre",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Changement de garde de titre: Gratuit",
+    "line_number": 189
+  },
+  {
+    "section": "3. SERVICES BANCAIRES",
+    "subsection": "3.2. Frais liés aux services bancaires",
+    "service": "Frais de reclassement",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Frais de reclassement: Gratuit",
+    "line_number": 190
+  },
+  {
+    "section": "3. SERVICES BANCAIRES",
+    "subsection": "3.2. Frais liés aux services bancaires",
+    "service": "Frais juridiques relatifs aux conventions de crédit (hors frais d'enregistrement)",
+    "amount": 15000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais juridiques relatifs aux conventions de crédit (hors frais d'enregistrement): 15 000 XOF",
+    "line_number": 193
+  },
+  {
+    "section": "3. SERVICES BANCAIRES",
+    "subsection": "3.2. Frais liés aux services bancaires",
+    "service": "Frais juridiques relatifs aux garanties (hors frais d'enregistrement)",
+    "amount": 20000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais juridiques relatifs aux garanties (hors frais d'enregistrement): 20 000 XOF",
+    "line_number": 194
+  },
+  {
+    "section": "3. SERVICES BANCAIRES",
+    "subsection": "3.2. Frais liés aux services bancaires",
+    "service": "Frais de main levée",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Frais de main levée: Gratuit",
+    "line_number": 195
+  },
+  {
+    "section": "3. SERVICES BANCAIRES",
+    "subsection": "3.2. Frais liés aux services bancaires",
+    "service": "Frais juridiques liés à la liquidation de succession",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais juridiques liés à la liquidation de succession: 10 000 XOF",
+    "line_number": 196
+  },
+  {
+    "section": "4. SERVICES DE BANQUE A DISTANCE",
+    "subsection": "4.1. Banque en ligne",
+    "service": "Pack 1",
+    "amount": 15000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Pack 1: Consultation de solde + Avis de relevé de compte: 15 000 XOF",
+    "line_number": 205
+  },
+  {
+    "section": "4. SERVICES DE BANQUE A DISTANCE",
+    "subsection": "4.1. Banque en ligne",
+    "service": "Pack 2",
+    "amount": 125000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Pack 2: Pack 1 + transactionnel: 25 000 XOF",
+    "line_number": 206
+  },
+  {
+    "section": "4. SERVICES DE BANQUE A DISTANCE",
+    "subsection": "4.1. Banque en ligne",
+    "service": "Virement électronique vers un autre établissement bancaire local",
+    "amount": 250.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Virement électronique vers un autre établissement bancaire local: 250 XOF/ligne",
+    "line_number": 209
+  },
+  {
+    "section": "4. SERVICES DE BANQUE A DISTANCE",
+    "subsection": "4.1. Banque en ligne",
+    "service": "Virements électroniques vers les pays de l'UEMOA",
+    "amount": 250.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Virements électroniques vers les pays de l'UEMOA: 250 XOF/ligne",
+    "line_number": 210
+  },
+  {
+    "section": "4. SERVICES DE BANQUE A DISTANCE",
+    "subsection": "4.1. Banque en ligne",
+    "service": "Virement de masse - Interne",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Virement de masse - Interne: Gratuit",
+    "line_number": 211
+  },
+  {
+    "section": "4. SERVICES DE BANQUE A DISTANCE",
+    "subsection": "4.1. Banque en ligne",
+    "service": "Virement de masse - Confrère",
+    "amount": 200.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Virement de masse - Confrère: 200 XOF/Ligne",
+    "line_number": 212
+  },
+  {
+    "section": "4. SERVICES DE BANQUE A DISTANCE",
+    "subsection": "4.1. Banque en ligne",
+    "service": "Avis de debit et de crédit par voie électronique",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Avis de debit et de crédit par voie électronique: Gratuit",
+    "line_number": 215
+  },
+  {
+    "section": "4. SERVICES DE BANQUE A DISTANCE",
+    "subsection": "4.1. Banque en ligne",
+    "service": "Accès au service de consultation et de gestion de compte sur internet",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Accès au service de consultation et de gestion de compte sur internet: Gratuit",
+    "line_number": 216
+  },
+  {
+    "section": "4. SERVICES DE BANQUE A DISTANCE",
+    "subsection": "4.1. Banque en ligne",
+    "service": "Téléchargement de fichiers web",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Téléchargement de fichiers web: Gratuit",
+    "line_number": 217
+  },
+  {
+    "section": "5. GESTION DES INCIDENTS DE PAIEMENTS",
+    "subsection": "",
+    "service": "Frais de déclaration d'opposition à la Banque centrale",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Frais de déclaration d'opposition à la Banque centrale: Gratuit",
+    "line_number": 223
+  },
+  {
+    "section": "5. GESTION DES INCIDENTS DE PAIEMENTS",
+    "subsection": "",
+    "service": "Frais de mainlevée d'opposition à la Banque Centrale",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Frais de mainlevée d'opposition à la Banque Centrale: Gratuit",
+    "line_number": 224
+  },
+  {
+    "section": "5. GESTION DES INCIDENTS DE PAIEMENTS",
+    "subsection": "",
+    "service": "Frais d'impayés",
+    "amount": 30000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais d'impayés: 30 000 XOF",
+    "line_number": 225
+  },
+  {
+    "section": "5. GESTION DES INCIDENTS DE PAIEMENTS",
+    "subsection": "",
+    "service": "Frais d'injonction",
+    "amount": 7510.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais d'injonction: 7 510 XOF",
+    "line_number": 226
+  },
+  {
+    "section": "5. GESTION DES INCIDENTS DE PAIEMENTS",
+    "subsection": "",
+    "service": "Duplicata lettre d'incident de paiement",
+    "amount": 5000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Duplicata lettre d'incident de paiement: 5 000 XOF",
+    "line_number": 227
+  },
+  {
+    "section": "5. GESTION DES INCIDENTS DE PAIEMENTS",
+    "subsection": "",
+    "service": "Lettre de relance pour compte débiteur (pli simple)",
+    "amount": 5000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Lettre de relance pour compte débiteur (pli simple): 5 000 XOF",
+    "line_number": 228
+  },
+  {
+    "section": "5. GESTION DES INCIDENTS DE PAIEMENTS",
+    "subsection": "",
+    "service": "Lettre de relance pour compte débiteur (pli recommandé)",
+    "amount": 5000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Lettre de relance pour compte débiteur (pli recommandé): 5 000 XOF",
+    "line_number": 229
+  },
+  {
+    "section": "5. GESTION DES INCIDENTS DE PAIEMENTS",
+    "subsection": "",
+    "service": "Lettre déclaration à la CIP",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Lettre déclaration à la CIP: 10 000 XOF",
+    "line_number": 230
+  },
+  {
+    "section": "5. GESTION DES INCIDENTS DE PAIEMENTS",
+    "subsection": "",
+    "service": "Certificat de non paiement",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Certificat de non paiement: Gratuit",
+    "line_number": 231
+  },
+  {
+    "section": "5. GESTION DES INCIDENTS DE PAIEMENTS",
+    "subsection": "",
+    "service": "Lettre d'information préalable au rejet de chèque sans provision",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Lettre d'information préalable au rejet de chèque sans provision: Gratuit",
+    "line_number": 232
+  },
+  {
+    "section": "6. OPÉRATIONS SUR TITRES",
+    "subsection": "",
+    "service": "Commission de placement de titre",
+    "amount": 0.8,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission de placement de titre: 0,80%",
+    "line_number": 238
+  },
+  {
+    "section": "6. OPÉRATIONS SUR TITRES",
+    "subsection": "",
+    "service": "Achat/vente",
+    "amount": 0.8,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Achat/vente: 0,80%",
+    "line_number": 241
+  },
+  {
+    "section": "6. OPÉRATIONS SUR TITRES",
+    "subsection": "",
+    "service": "Gestion sous mandat (Achat/vente)",
+    "amount": 0.8,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Gestion sous mandat (Achat/vente): 0,80%",
+    "line_number": 242
+  },
+  {
+    "section": "6. OPÉRATIONS SUR TITRES",
+    "subsection": "",
+    "service": "Commission de courtage sur transactions sur dossier",
+    "amount": 0.8,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission de courtage sur transactions sur dossier: 0,80%",
+    "line_number": 243
+  },
+  {
+    "section": "6. OPÉRATIONS SUR TITRES",
+    "subsection": "",
+    "service": "Commission de conservation",
+    "amount": 0.2,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission de conservation: 0,20%",
+    "line_number": 246
+  },
+  {
+    "section": "6. OPÉRATIONS SUR TITRES",
+    "subsection": "",
+    "service": "Droit de garde des clients ordinaires",
+    "amount": 0.25,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Droit de garde des clients ordinaires: 0,25%/an",
+    "line_number": 247
+  },
+  {
+    "section": "6. OPÉRATIONS SUR TITRES",
+    "subsection": "",
+    "service": "Droit de garde du portefeuille de gestion sous mandat",
+    "amount": 0.25,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Droit de garde du portefeuille de gestion sous mandat: 0,25%/an",
+    "line_number": 248
+  },
+  {
+    "section": "6. OPÉRATIONS SUR TITRES",
+    "subsection": "",
+    "service": "Commission de gestion sous mandat",
+    "amount": 1.5,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission de gestion sous mandat: 1,5%/an",
+    "line_number": 249
+  },
+  {
+    "section": "6. OPÉRATIONS SUR TITRES",
+    "subsection": "",
+    "service": "Commission de transfert de titres (Forfait par ligne)",
+    "amount": 0.2,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission de transfert de titres (Forfait par ligne): 0,20%",
+    "line_number": 252
+  },
+  {
+    "section": "6. OPÉRATIONS SUR TITRES",
+    "subsection": "",
+    "service": "Commission de valorisation",
+    "amount": 0.01,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission de valorisation: 0,01%",
+    "line_number": 253
+  },
+  {
+    "section": "6. OPÉRATIONS SUR TITRES",
+    "subsection": "",
+    "service": "Accès à la bourse en ligne",
+    "amount": 1000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Accès à la bourse en ligne: 1 000 XOF/mois",
+    "line_number": 254
+  },
+  {
+    "section": "6. OPÉRATIONS SUR TITRES",
+    "subsection": "",
+    "service": "Nantissement de titres",
+    "amount": 0.25,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Nantissement de titres: 0,25%",
+    "line_number": 257
+  },
+  {
+    "section": "6. OPÉRATIONS SUR TITRES",
+    "subsection": "",
+    "service": "Main levée sur titres nantis",
+    "amount": 0.25,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Main levée sur titres nantis: 0,25%",
+    "line_number": 258
+  },
+  {
+    "section": "6. OPÉRATIONS SUR TITRES",
+    "subsection": "",
+    "service": "Attestation de propriété",
+    "amount": 20000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Attestation de propriété: 20 000 XOF/attestation",
+    "line_number": 261
+  },
+  {
+    "section": "6. OPÉRATIONS SUR TITRES",
+    "subsection": "",
+    "service": "Attestation de titres en dépôt",
+    "amount": 20000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Attestation de titres en dépôt: 20 000 XOF/attestation",
+    "line_number": 262
+  },
+  {
+    "section": "6. OPÉRATIONS SUR TITRES",
+    "subsection": "",
+    "service": "Création de certificat de titres",
+    "amount": 5000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Création de certificat de titres: 5 000 XOF/certificat",
+    "line_number": 263
+  },
+  {
+    "section": "7. OPÉRATIONS DE CHANGE",
+    "subsection": "",
+    "service": "Achat de billet de banque en Euros",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "Achat de billet de banque en Euros: Gratuit",
+    "line_number": 271
+  },
+  {
+    "section": "7. OPÉRATIONS DE CHANGE",
+    "subsection": "",
+    "service": "Frais de dossier (uniquement par Caisse)",
+    "amount": 2.0,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Frais de dossier (uniquement par Caisse): 2%",
+    "line_number": 274
+  },
+  {
+    "section": "7. OPÉRATIONS DE CHANGE",
+    "subsection": "",
+    "service": "Commission de change",
+    "amount": 2.0,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission de change: 2% si client AFG BANK, 2,5% si non client",
+    "line_number": 275
+  },
+  {
+    "section": "7. OPÉRATIONS DE CHANGE",
+    "subsection": "",
+    "service": "TOB (Taxe sur Opérations Bancaires)",
+    "amount": 10.0,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- TOB (Taxe sur Opérations Bancaires): (T1+T2)*10%",
+    "line_number": 276
+  },
+  {
+    "section": "7. OPÉRATIONS DE CHANGE",
+    "subsection": "",
+    "service": "Frais de dossier (uniquement par Caisse)",
+    "amount": 5000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de dossier (uniquement par Caisse): Max 5 000 XOF",
+    "line_number": 279
+  },
+  {
+    "section": "7. OPÉRATIONS DE CHANGE",
+    "subsection": "",
+    "service": "Commission de change",
+    "amount": 2.0,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission de change: 2% si client AFG BANK, 2,5% si non client",
+    "line_number": 280
+  },
+  {
+    "section": "7. OPÉRATIONS DE CHANGE",
+    "subsection": "",
+    "service": "TOB (Taxe sur Opérations Bancaires)",
+    "amount": 10.0,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- TOB (Taxe sur Opérations Bancaires): (T1+T2)*10%",
+    "line_number": 281
+  },
+  {
+    "section": "8. OPÉRATIONS DE CREDIT",
+    "subsection": "8.1. Crédit de trésorerie",
+    "service": "Découvert convenu et formalisé",
+    "amount": null,
+    "currency": "",
+    "note": "TBB + Marge (Nous consulter)",
+    "raw_line": "- Découvert convenu et formalisé: TBB + Marge (Nous consulter)",
+    "line_number": 290
+  },
+  {
+    "section": "8. OPÉRATIONS DE CREDIT",
+    "subsection": "8.1. Crédit de trésorerie",
+    "service": "Découvert convenu et non formalisé",
+    "amount": null,
+    "currency": "",
+    "note": "TBB + Marge (Nous consulter)",
+    "raw_line": "- Découvert convenu et non formalisé: TBB + Marge (Nous consulter)",
+    "line_number": 291
+  },
+  {
+    "section": "8. OPÉRATIONS DE CREDIT",
+    "subsection": "8.1. Crédit de trésorerie",
+    "service": "Intérêt",
+    "amount": null,
+    "currency": "",
+    "note": "TBB + Marge (Nous consulter)",
+    "raw_line": "- Intérêt: TBB + Marge (Nous consulter)",
+    "line_number": 294
+  },
+  {
+    "section": "8. OPÉRATIONS DE CREDIT",
+    "subsection": "8.1. Crédit de trésorerie",
+    "service": "Frais de dossier/Revue annuelle",
+    "amount": null,
+    "currency": "",
+    "note": "Nous consulter",
+    "raw_line": "- Frais de dossier/Revue annuelle: Nous consulter",
+    "line_number": 295
+  },
+  {
+    "section": "8. OPÉRATIONS DE CREDIT",
+    "subsection": "8.1. Crédit de trésorerie",
+    "service": "Frais de tirage",
+    "amount": null,
+    "currency": "",
+    "note": "Nous consulter",
+    "raw_line": "- Frais de tirage: Nous consulter",
+    "line_number": 296
+  },
+  {
+    "section": "8. OPÉRATIONS DE CREDIT",
+    "subsection": "8.1. Crédit de trésorerie",
+    "service": "Commission d'engagement",
+    "amount": null,
+    "currency": "",
+    "note": "Nous consulter",
+    "raw_line": "- Commission d'engagement: Nous consulter",
+    "line_number": 297
+  },
+  {
+    "section": "8. OPÉRATIONS DE CREDIT",
+    "subsection": "8.1. Crédit de trésorerie",
+    "service": "Pénalité/remboursement anticipé",
+    "amount": null,
+    "currency": "",
+    "note": "Nous consulter",
+    "raw_line": "- Pénalité/remboursement anticipé: Nous consulter",
+    "line_number": 298
+  },
+  {
+    "section": "8. OPÉRATIONS DE CREDIT",
+    "subsection": "8.2. Crédit par signature",
+    "service": "Frais de dossier/revue annuelle",
+    "amount": 30000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de dossier/revue annuelle: 30 000 XOF",
+    "line_number": 303
+  },
+  {
+    "section": "8. OPÉRATIONS DE CREDIT",
+    "subsection": "8.2. Crédit par signature",
+    "service": "Commission/trimestre indivisible d'avance",
+    "amount": 3.0,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission/trimestre indivisible d'avance: 3,00%",
+    "line_number": 304
+  },
+  {
+    "section": "8. OPÉRATIONS DE CREDIT",
+    "subsection": "8.2. Crédit par signature",
+    "service": "Frais de dossier/revue annuelle",
+    "amount": 30000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de dossier/revue annuelle: 30 000 XOF",
+    "line_number": 307
+  },
+  {
+    "section": "8. OPÉRATIONS DE CREDIT",
+    "subsection": "8.2. Crédit par signature",
+    "service": "Commission/trimestre indivisible d'avance",
+    "amount": 3.0,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission/trimestre indivisible d'avance: 3,00%",
+    "line_number": 308
+  },
+  {
+    "section": "8. OPÉRATIONS DE CREDIT",
+    "subsection": "8.2. Crédit par signature",
+    "service": "Frais de dossier/revue annuelle",
+    "amount": 30000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de dossier/revue annuelle: 30 000 XOF",
+    "line_number": 311
+  },
+  {
+    "section": "8. OPÉRATIONS DE CREDIT",
+    "subsection": "8.2. Crédit par signature",
+    "service": "Commission",
+    "amount": 4.0,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission: 4,00%",
+    "line_number": 312
+  },
+  {
+    "section": "8. OPÉRATIONS DE CREDIT",
+    "subsection": "8.2. Crédit par signature",
+    "service": "Frais de dossier/revue annuelle",
+    "amount": 30000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de dossier/revue annuelle: 30 000 XOF",
+    "line_number": 315
+  },
+  {
+    "section": "8. OPÉRATIONS DE CREDIT",
+    "subsection": "8.2. Crédit par signature",
+    "service": "Commission",
+    "amount": 3.0,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission: 3,00%",
+    "line_number": 316
+  },
+  {
+    "section": "8. OPÉRATIONS DE CREDIT",
+    "subsection": "8.2. Crédit par signature",
+    "service": "Frais de dossier/revue annuelle",
+    "amount": 30000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de dossier/revue annuelle: 30 000 XOF",
+    "line_number": 319
+  },
+  {
+    "section": "8. OPÉRATIONS DE CREDIT",
+    "subsection": "8.2. Crédit par signature",
+    "service": "Commission",
+    "amount": 3.0,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission: 3,00%",
+    "line_number": 320
+  },
+  {
+    "section": "8. OPÉRATIONS DE CREDIT",
+    "subsection": "8.3. Autres opérations connexes aux opérations de crédit",
+    "service": "Main levée hypothèque partielle ou totale (hors frais notariés et d'enregistrement)",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Main levée hypothèque partielle ou totale (hors frais notariés et d'enregistrement): Gratuit",
+    "line_number": 324
+  },
+  {
+    "section": "8. OPÉRATIONS DE CREDIT",
+    "subsection": "8.3. Autres opérations connexes aux opérations de crédit",
+    "service": "Modification simple",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Modification simple: Gratuit",
+    "line_number": 325
+  },
+  {
+    "section": "8. OPÉRATIONS DE CREDIT",
+    "subsection": "8.3. Autres opérations connexes aux opérations de crédit",
+    "service": "Modification des taux avec réédition de tableau d'amortissement",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Modification des taux avec réédition de tableau d'amortissement: Gratuit",
+    "line_number": 326
+  },
+  {
+    "section": "8. OPÉRATIONS DE CREDIT",
+    "subsection": "8.3. Autres opérations connexes aux opérations de crédit",
+    "service": "Autres modification nécessitant une rédaction d'acte",
+    "amount": 15000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Autres modification nécessitant une rédaction d'acte: 15 000 XOF",
+    "line_number": 327
+  },
+  {
+    "section": "8. OPÉRATIONS DE CREDIT",
+    "subsection": "8.3. Autres opérations connexes aux opérations de crédit",
+    "service": "Demande d'émission de tableau d'amortissement",
+    "amount": 5000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Demande d'émission de tableau d'amortissement: 5 000 XOF",
+    "line_number": 328
+  },
+  {
+    "section": "8. OPÉRATIONS DE CREDIT",
+    "subsection": "8.3. Autres opérations connexes aux opérations de crédit",
+    "service": "Frais d'échéance d'impayée (selon périodicité)",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Frais d'échéance d'impayée (selon périodicité): Gratuit",
+    "line_number": 329
+  },
+  {
+    "section": "8. OPÉRATIONS DE CREDIT",
+    "subsection": "8.3. Autres opérations connexes aux opérations de crédit",
+    "service": "Frais fixe d'échéance impayée",
+    "amount": 5000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais fixe d'échéance impayée: 5 000 XOF",
+    "line_number": 330
+  },
+  {
+    "section": "8. OPÉRATIONS DE CREDIT",
+    "subsection": "8.3. Autres opérations connexes aux opérations de crédit",
+    "service": "Intérêt de retard sur échéance",
+    "amount": 5000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Intérêt de retard sur échéance: 5 000 XOF",
+    "line_number": 331
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.1. Encaissement Chèques & effet en devises",
+    "service": "Commission d'encaissement",
+    "amount": 0.1,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission d'encaissement: 0,1% (mini 15 000 XOF, maxi 30 000 XOF)",
+    "line_number": 339
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.1. Encaissement Chèques & effet en devises",
+    "service": "Commission de change",
+    "amount": 0.1,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission de change: 0,1% (min 3 000 XOF)",
+    "line_number": 340
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.1. Encaissement Chèques & effet en devises",
+    "service": "Port de lettre",
+    "amount": 1000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Port de lettre: 1 000 XOF",
+    "line_number": 341
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.1. Encaissement Chèques & effet en devises",
+    "service": "Frais d'envoi",
+    "amount": 30000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais d'envoi: 30 000 XOF",
+    "line_number": 342
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.1. Encaissement Chèques & effet en devises",
+    "service": "Provisions pour retour d'effets impayés",
+    "amount": 15000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Provisions pour retour d'effets impayés: 15 000 XOF",
+    "line_number": 343
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.1. Encaissement Chèques & effet en devises",
+    "service": "Provisions pour retour de chèques impayés",
+    "amount": 15000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Provisions pour retour de chèques impayés: 15 000 XOF",
+    "line_number": 344
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.1. Encaissement Chèques & effet en devises",
+    "service": "Avis de sort/SWIFT",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Avis de sort/SWIFT: 10 000 XOF",
+    "line_number": 345
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.2.1. Transferts Zone UEMOA:",
+    "service": "Frais d'envoi Confrère SICA",
+    "amount": 3000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais d'envoi Confrère SICA: 3 000 XOF",
+    "line_number": 350
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.2.1. Transferts Zone UEMOA:",
+    "service": "Frais d'envoi Confrère RTGS",
+    "amount": 5000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais d'envoi Confrère RTGS: 5 000 XOF",
+    "line_number": 351
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.2.2. Virement ou Transfert Hors Zone UEMOA (en EUROS):",
+    "service": "TTHU (Taxe transfert BCEAO)",
+    "amount": 0.6,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- TTHU (Taxe transfert BCEAO): 0,60%",
+    "line_number": 354
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.2.2. Virement ou Transfert Hors Zone UEMOA (en EUROS):",
+    "service": "Commission de transfert (selon la disponibilité des devises)",
+    "amount": 2.0,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission de transfert (selon la disponibilité des devises): 2,00%",
+    "line_number": 355
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.2.2. Virement ou Transfert Hors Zone UEMOA (en EUROS):",
+    "service": "Frais de dossiers",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de dossiers: 10 000 XOF",
+    "line_number": 356
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.2.2. Virement ou Transfert Hors Zone UEMOA (en EUROS):",
+    "service": "Frais FINEX",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais FINEX: 10 000 XOF",
+    "line_number": 357
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.2.2. Virement ou Transfert Hors Zone UEMOA (en EUROS):",
+    "service": "Frais d'envoi SWIFT",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais d'envoi SWIFT: 10 000 XOF",
+    "line_number": 358
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.2.3. Virement ou Transfert Hors Zone UEMOA (Autres Devises):",
+    "service": "TTHU (Taxe transfert BCEAO)",
+    "amount": 0.6,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- TTHU (Taxe transfert BCEAO): 0,60%",
+    "line_number": 361
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.2.3. Virement ou Transfert Hors Zone UEMOA (Autres Devises):",
+    "service": "Commission de transfert (selon la disponibilité des devises)",
+    "amount": 2.0,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission de transfert (selon la disponibilité des devises): 2,00%",
+    "line_number": 362
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.2.3. Virement ou Transfert Hors Zone UEMOA (Autres Devises):",
+    "service": "Commission de change",
+    "amount": 0.1,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission de change: 0,1% (min 3 000 XOF)",
+    "line_number": 363
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.2.3. Virement ou Transfert Hors Zone UEMOA (Autres Devises):",
+    "service": "Frais de dossiers",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de dossiers: 10 000 XOF",
+    "line_number": 364
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.2.3. Virement ou Transfert Hors Zone UEMOA (Autres Devises):",
+    "service": "Frais FINEX",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais FINEX: 10 000 XOF",
+    "line_number": 365
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.2.3. Virement ou Transfert Hors Zone UEMOA (Autres Devises):",
+    "service": "Frais d'envoi SWIFT",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais d'envoi SWIFT: 10 000 XOF",
+    "line_number": 366
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.1. Remise documentaire Import:",
+    "service": "Frais de dossier",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de dossier: 10 000 XOF",
+    "line_number": 372
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.1. Remise documentaire Import:",
+    "service": "Commission d'ouverture",
+    "amount": 20000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Commission d'ouverture: 20 000 XOF",
+    "line_number": 373
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.1. Remise documentaire Import:",
+    "service": "SWIFT",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- SWIFT: 10 000 XOF",
+    "line_number": 374
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.1. Remise documentaire Import:",
+    "service": "Commission d'acceptation (DOSSIERS A TERME)",
+    "amount": 12000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Commission d'acceptation (DOSSIERS A TERME): 12 000 XOF",
+    "line_number": 377
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.1. Remise documentaire Import:",
+    "service": "Commission de change",
+    "amount": 0.1,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission de change: 0,1% (Mini: 5 000 XOF)",
+    "line_number": 380
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.1. Remise documentaire Import:",
+    "service": "Commission d'encaissement",
+    "amount": 6000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Commission d'encaissement: 6 000 XOF",
+    "line_number": 381
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.1. Remise documentaire Import:",
+    "service": "Taxe BCEAO (TTHU)",
+    "amount": 0.6,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Taxe BCEAO (TTHU): 0,60%",
+    "line_number": 382
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.1. Remise documentaire Import:",
+    "service": "Commission de transfert",
+    "amount": 1.25,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission de transfert: 1,25%",
+    "line_number": 383
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.1. Remise documentaire Import:",
+    "service": "Frais Swift",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais Swift: 10 000 XOF",
+    "line_number": 384
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.1. Remise documentaire Import:",
+    "service": "Remise transmise à confrère",
+    "amount": 15000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Remise transmise à confrère: 15 000 XOF",
+    "line_number": 385
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.1. Remise documentaire Import:",
+    "service": "Commission de prorogation",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Commission de prorogation: 10 000 XOF",
+    "line_number": 386
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.2. Remise documentaire Export:",
+    "service": "Frais de courrier express",
+    "amount": 35000.4,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de courrier express: MIN 35 000 XOF, MAX 40 000 XOF",
+    "line_number": 390
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.2. Remise documentaire Export:",
+    "service": "Frais Swift",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais Swift: 10 000 XOF",
+    "line_number": 391
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.2. Remise documentaire Export:",
+    "service": "Commission documentaire Export",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Commission documentaire Export: 10 000 XOF/jeu de BL",
+    "line_number": 392
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.2. Remise documentaire Export:",
+    "service": "Frais de dossiers",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de dossiers: 10 000 XOF",
+    "line_number": 393
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.2. Remise documentaire Export:",
+    "service": "Commission de prorogation",
+    "amount": 25000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Commission de prorogation: 25 000 XOF",
+    "line_number": 394
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.2. Remise documentaire Export:",
+    "service": "Commission de change",
+    "amount": 0.1,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission de change: 0,1% (Mini: 5 000 XOF)",
+    "line_number": 395
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.2. Remise documentaire Export:",
+    "service": "Retour impayés",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Retour impayés: 10 000 XOF",
+    "line_number": 396
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.3. Crédit Documentaire Import:",
+    "service": "Frais de dossier",
+    "amount": 20000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de dossier: 20 000 XOF",
+    "line_number": 400
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.3. Crédit Documentaire Import:",
+    "service": "Commission de confirmation",
+    "amount": 2.0,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission de confirmation: 2%",
+    "line_number": 401
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.3. Crédit Documentaire Import:",
+    "service": "Frais de swift",
+    "amount": 20000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de swift: 20 000 XOF",
+    "line_number": 402
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.3. Crédit Documentaire Import:",
+    "service": "Commission d'ouverture",
+    "amount": 2.5,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission d'ouverture: 2,5%/trimestre indivisible",
+    "line_number": 403
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.3. Crédit Documentaire Import:",
+    "service": "Commission d'acceptation",
+    "amount": 1.5,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission d'acceptation: 1,5%/trimestre indivisible",
+    "line_number": 406
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.3. Crédit Documentaire Import:",
+    "service": "Commission d'utilisation",
+    "amount": 0.25,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission d'utilisation: 0,25%",
+    "line_number": 407
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.3. Crédit Documentaire Import:",
+    "service": "Commission de négociation",
+    "amount": 1.0,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission de négociation: 1,0%",
+    "line_number": 408
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.3. Crédit Documentaire Import:",
+    "service": "Frais de levée de réserve",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de levée de réserve: 10 000 XOF",
+    "line_number": 409
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.3. Crédit Documentaire Import:",
+    "service": "Frais d'annulation",
+    "amount": 50000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais d'annulation: 50 000 XOF",
+    "line_number": 410
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.3. Crédit Documentaire Import:",
+    "service": "Commission de paiement",
+    "amount": 1.25,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission de paiement: 1,25%",
+    "line_number": 411
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.3. Crédit Documentaire Import:",
+    "service": "Taxe de transfert BCEAO",
+    "amount": 0.6,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Taxe de transfert BCEAO: 0,60%",
+    "line_number": 412
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.3. Crédit Documentaire Import:",
+    "service": "Frais Amendement (portant sur la validité et le montant)",
+    "amount": 2.5,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Frais Amendement (portant sur la validité et le montant): 2,5%/an",
+    "line_number": 415
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.3. Crédit Documentaire Import:",
+    "service": "Autres amendement",
+    "amount": 20000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Autres amendement: 20 000 XOF",
+    "line_number": 416
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.4. Crédit Documentaire Export:",
+    "service": "Frais de dossier",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de dossier: 10 000 XOF",
+    "line_number": 419
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.4. Crédit Documentaire Export:",
+    "service": "Commission de notification confirmé",
+    "amount": 1.1,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission de notification confirmé: 1,1%/an (min 35 000 XOF, maxi 50 000 XOF)",
+    "line_number": 420
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.4. Crédit Documentaire Export:",
+    "service": "Commission de notification non confirmé",
+    "amount": 0.2,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission de notification non confirmé: 0,2%/an",
+    "line_number": 421
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.4. Crédit Documentaire Export:",
+    "service": "Commission de levée de réserve",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Commission de levée de réserve: 10 000 XOF",
+    "line_number": 422
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.4. Crédit Documentaire Export:",
+    "service": "Frais Amendement",
+    "amount": 25000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais Amendement: 25 000 XOF",
+    "line_number": 423
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.4. Crédit Documentaire Export:",
+    "service": "Frais d'annulation",
+    "amount": 30000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais d'annulation: 30 000 XOF",
+    "line_number": 424
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.4. Crédit Documentaire Export:",
+    "service": "Frais d'acceptation",
+    "amount": 15000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais d'acceptation: 15 000 XOF",
+    "line_number": 425
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.4. Crédit Documentaire Export:",
+    "service": "Commission de change",
+    "amount": 0.1,
+    "currency": "%",
+    "note": "",
+    "raw_line": "- Commission de change: 0,10%",
+    "line_number": 426
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.4. Crédit Documentaire Export:",
+    "service": "Commission de prorogation",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Commission de prorogation: 10 000 XOF",
+    "line_number": 427
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.5. Domiciliation Internationale:",
+    "service": "Commission de domiciliation export",
+    "amount": 6000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Commission de domiciliation export: 6 000 XOF",
+    "line_number": 430
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.5. Domiciliation Internationale:",
+    "service": "Commission de domiciliation import",
+    "amount": 6000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Commission de domiciliation import: 6 000 XOF",
+    "line_number": 431
+  },
+  {
+    "section": "9. OPÉRATIONS AVEC L'ÉTRANGER",
+    "subsection": "9.3.5. Domiciliation Internationale:",
+    "service": "Frais de relance",
+    "amount": 200002.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de relance: 20 000 XOF (après la 2ème relance)",
+    "line_number": 434
+  },
+  {
+    "section": "10. AUTRES SERVICES DIVERS",
+    "subsection": "10.1. Frais de recherche de documents",
+    "service": "Moins d'un an",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Moins d'un an: 10 000 XOF",
+    "line_number": 442
+  },
+  {
+    "section": "10. AUTRES SERVICES DIVERS",
+    "subsection": "10.1. Frais de recherche de documents",
+    "service": "Plus d'un an",
+    "amount": 15000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Plus d'un an: 15 000 XOF",
+    "line_number": 443
+  },
+  {
+    "section": "10. AUTRES SERVICES DIVERS",
+    "subsection": "10.1. Frais de recherche de documents",
+    "service": "Supplément par photocopie",
+    "amount": 1000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Supplément par photocopie: 1 000 XOF/feuillet",
+    "line_number": 444
+  },
+  {
+    "section": "10. AUTRES SERVICES DIVERS",
+    "subsection": "10.2. Information annuelles des cautions",
+    "service": "Informations annuelles des cautions",
+    "amount": 20000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Informations annuelles des cautions: 20 000 XOF",
+    "line_number": 448
+  },
+  {
+    "section": "10. AUTRES SERVICES DIVERS",
+    "subsection": "10.3. Successions",
+    "service": "Frais d'ouverture de dossier de succession",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Frais d'ouverture de dossier de succession: Gratuit",
+    "line_number": 452
+  },
+  {
+    "section": "10. AUTRES SERVICES DIVERS",
+    "subsection": "10.3. Successions",
+    "service": "Frais de dossier de succession",
+    "amount": 20000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de dossier de succession: 20 000 XOF",
+    "line_number": 453
+  },
+  {
+    "section": "10. AUTRES SERVICES DIVERS",
+    "subsection": "10.3. Successions",
+    "service": "Frais annuels de tenue de compte",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Frais annuels de tenue de compte: Gratuit",
+    "line_number": 454
+  },
+  {
+    "section": "10. AUTRES SERVICES DIVERS",
+    "subsection": "10.3. Successions",
+    "service": "Frais annuels sur compte inactifs (créances arriérées)",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Frais annuels sur compte inactifs (créances arriérées): Gratuit",
+    "line_number": 455
+  },
+  {
+    "section": "10. AUTRES SERVICES DIVERS",
+    "subsection": "10.3. Successions",
+    "service": "Frais relatif saisie conservatoire/avis à des tiers détention ou opposition administrative",
+    "amount": 0.0,
+    "currency": "XOF",
+    "note": "Gratuit",
+    "raw_line": "- Frais relatif saisie conservatoire/avis à des tiers détention ou opposition administrative: Gratuit",
+    "line_number": 456
+  },
+  {
+    "section": "10. AUTRES SERVICES DIVERS",
+    "subsection": "10.3. Successions",
+    "service": "Lettre d'avertissement",
+    "amount": 19000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Lettre d'avertissement: 19 000 XOF",
+    "line_number": 457
+  },
+  {
+    "section": "10. AUTRES SERVICES DIVERS",
+    "subsection": "10.3. Successions",
+    "service": "Lettre d'injonction",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Lettre d'injonction: 10 000 XOF",
+    "line_number": 458
+  },
+  {
+    "section": "10. AUTRES SERVICES DIVERS",
+    "subsection": "10.3. Successions",
+    "service": "Frais de mise à disposition/succession",
+    "amount": 10000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Frais de mise à disposition/succession: 10 000 XOF",
+    "line_number": 459
+  },
+  {
+    "section": "10. AUTRES SERVICES DIVERS",
+    "subsection": "10.3. Successions",
+    "service": "Attestation d'avoir",
+    "amount": 20000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Attestation d'avoir: 20 000 XOF",
+    "line_number": 460
+  },
+  {
+    "section": "10. AUTRES SERVICES DIVERS",
+    "subsection": "10.3. Successions",
+    "service": "Reconstitution d'extrait de compte",
+    "amount": 20000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Reconstitution d'extrait de compte: 20 000 XOF",
+    "line_number": 461
+  },
+  {
+    "section": "10. AUTRES SERVICES DIVERS",
+    "subsection": "10.4. Divers",
+    "service": "Confirmation relevé pour demande de VISA",
+    "amount": 5000.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Confirmation relevé pour demande de VISA: 5 000 XOF",
+    "line_number": 465
+  },
+  {
+    "section": "10. AUTRES SERVICES DIVERS",
+    "subsection": "10.4. Divers",
+    "service": "Surcharge DAB/GAB",
+    "amount": 3500.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "- Surcharge DAB/GAB: 3 500 XOF",
+    "line_number": 466
+  },
+  {
+    "section": "5. Pour les grandes entreprises, des forfaits personnalisés sont disponibles",
+    "subsection": "",
+    "service": "Siège social",
+    "amount": null,
+    "currency": "",
+    "note": "Abidjan, Côte d'Ivoire",
+    "raw_line": "Siège social: Abidjan, Côte d'Ivoire",
+    "line_number": 482
+  },
+  {
+    "section": "5. Pour les grandes entreprises, des forfaits personnalisés sont disponibles",
+    "subsection": "",
+    "service": "Service clientèle entreprises",
+    "amount": 225.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "Service clientèle entreprises: +225 XX XX XX XX XX",
+    "line_number": 483
+  },
+  {
+    "section": "5. Pour les grandes entreprises, des forfaits personnalisés sont disponibles",
+    "subsection": "",
+    "service": "Email",
+    "amount": null,
+    "currency": "",
+    "note": "corporate@afgbank.ci",
+    "raw_line": "Email: corporate@afgbank.ci",
+    "line_number": 484
+  },
+  {
+    "section": "5. Pour les grandes entreprises, des forfaits personnalisés sont disponibles",
+    "subsection": "",
+    "service": "Website",
+    "amount": null,
+    "currency": "",
+    "note": "www.afgbank.ci",
+    "raw_line": "Website: www.afgbank.ci",
+    "line_number": 485
+  },
+  {
+    "section": "5. Pour les grandes entreprises, des forfaits personnalisés sont disponibles",
+    "subsection": "",
+    "service": "Document mis à jour le",
+    "amount": 1032024.0,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "Document mis à jour le: 01/03/2024",
+    "line_number": 487
+  },
+  {
+    "section": "5. Pour les grandes entreprises, des forfaits personnalisés sont disponibles",
+    "subsection": "",
+    "service": "Version",
+    "amount": 2024.03,
+    "currency": "XOF",
+    "note": "",
+    "raw_line": "Version: 2024.03",
+    "line_number": 488
+  }
+]

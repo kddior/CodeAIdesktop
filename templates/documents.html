@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Documents - AFG Bank Assistant</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/documents.css">
+</head>
+<body>
+    <div class="documents-container">
+        <!-- Header with Navigation -->
+        <div class="documents-header">
+            <div class="header-content">
+                <div>
+                    <h1>📚 Gestion des Documents</h1>
+                    <p class="subtitle">Gérez les documents de la base de connaissances</p>
+                </div>
+                <div class="header-actions">
+                    <a href="/" class="btn-secondary">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                        </svg>
+                        Retour au Chat
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistics Cards -->
+        <div class="stats-grid" id="statsGrid">
+            <div class="stat-card">
+                <div class="stat-icon">📄</div>
+                <div class="stat-info">
+                    <div class="stat-value" id="totalDocs">-</div>
+                    <div class="stat-label">Documents</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">📦</div>
+                <div class="stat-info">
+                    <div class="stat-value" id="totalChunks">-</div>
+                    <div class="stat-label">Chunks</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">✅</div>
+                <div class="stat-info">
+                    <div class="stat-value" id="readyDocs">-</div>
+                    <div class="stat-label">Prêts</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">⏳</div>
+                <div class="stat-info">
+                    <div class="stat-value" id="processingDocs">-</div>
+                    <div class="stat-label">En cours</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Upload Section -->
+        <div class="upload-section">
+            <h2>📤 Ajouter un Document</h2>
+
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-icon">📁</div>
+                <p class="upload-text">Glissez-déposez un fichier ici ou <span class="upload-link">parcourez</span></p>
+                <p class="upload-hint">PDF ou TXT • Maximum 50 MB</p>
+                <input type="file" id="fileInput" accept=".pdf,.txt" hidden>
+            </div>
+
+            <form id="uploadForm" class="upload-form hidden">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Nom du document *</label>
+                        <input type="text" id="docName" required placeholder="Ex: AFG Bank - Tarifs 2025">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Type de document *</label>
+                        <select id="docType" required>
+                            <option value="tarif">Tarif</option>
+                            <option value="procedure">Procédure</option>
+                            <option value="regulation">Réglementation</option>
+                            <option value="website">Site Web</option>
+                            <option value="other">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Pays</label>
+                        <select id="country">
+                            <option value="CI">Côte d'Ivoire</option>
+                            <option value="SN">Sénégal</option>
+                            <option value="BJ">Bénin</option>
+                            <option value="TG">Togo</option>
+                            <option value="BF">Burkina Faso</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Banque</label>
+                        <input type="text" id="bank" value="AFG Bank CI">
+                    </div>
+                </div>
+
+                <div class="selected-file" id="selectedFile"></div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn-secondary" id="cancelBtn">Annuler</button>
+                    <button type="submit" class="btn-primary" id="uploadBtn">
+                        <span class="btn-text">Télécharger</span>
+                        <span class="btn-spinner hidden">⏳ Traitement...</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Documents List -->
+        <div class="documents-list-section">
+            <div class="section-header">
+                <h2>📋 Documents</h2>
+                <button class="btn-secondary" id="refreshBtn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0118.8-4.3M22 12.5a10 10 0 01-18.8 4.2"/>
+                    </svg>
+                    Actualiser
+                </button>
+            </div>
+
+            <div id="documentsList" class="documents-list">
+                <div class="loading-state">
+                    <div class="spinner"></div>
+                    <p>Chargement des documents...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/documents.js"></script>
+</body>
+</html>

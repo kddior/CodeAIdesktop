@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFG Bank Assistant</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="header-content">
+                <div>
+                    <h1>AFG Bank Assistant</h1>
+                    <p class="subtitle">Votre assistant bancaire intelligent</p>
+                </div>
+            </div>
+            <div class="header-controls">
+                <a href="/documents" class="docs-btn" title="Gérer les documents">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M13 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V9z"/>
+                        <polyline points="13 2 13 9 20 9"/>
+                    </svg>
+                </a>
+                <div class="model-selector">
+                    <button id="modelBtn" class="model-btn">
+                        <span id="modelName">Qwen 14B</span>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                            <path d="M6 9L1 4h10L6 9z"/>
+                        </svg>
+                    </button>
+                    <div id="modelDropdown" class="model-dropdown">
+                        <div class="model-option active" data-model="qwen14b">
+                            <span class="model-option-name">Qwen 14B</span>
+                            <span class="model-option-desc">Rapide - Modèle standard</span>
+                        </div>
+                        <div class="model-option" data-model="qwen32b">
+                            <span class="model-option-name">Qwen 32B</span>
+                            <span class="model-option-desc">Précis - Modèle expert</span>
+                        </div>
+                    </div>
+                </div>
+                <button id="clearBtn" class="clear-btn" title="Nouvelle conversation">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Messages Container -->
+        <div id="messages" class="messages-container">
+            <!-- Welcome message -->
+            <div class="message assistant-message">
+                <div class="message-content">
+                    <div class="message-avatar">🏦</div>
+                    <div class="message-text">
+                        <p>Bonjour ! Je suis votre assistant AFG Bank. Comment puis-je vous aider aujourd'hui ?</p>
+                        <div class="suggestions">
+                            <button class="suggestion-chip" data-message="Combien coûte une attestation de clôture de compte ?">💰 Tarifs</button>
+                            <button class="suggestion-chip" data-message="Quel est mon solde ?">💳 Mon solde</button>
+                            <button class="suggestion-chip" data-message="Je veux faire un virement">📤 Virement</button>
+                            <button class="suggestion-chip" data-message="Comment ouvrir un compte ?">ℹ️ Informations</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Indicator -->
+        <div id="loading" class="loading-indicator" style="display: none;">
+            <div class="typing-indicator">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-container">
+            <form id="chatForm">
+                <div class="input-wrapper">
+                    <textarea
+                        id="messageInput"
+                        placeholder="Posez votre question..."
+                        rows="1"
+                        autocomplete="off"
+                    ></textarea>
+                    <button type="submit" id="sendBtn" class="send-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/static/js/chat.js"></script>
+</body>
+</html>

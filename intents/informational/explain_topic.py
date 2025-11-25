@@ -1,0 +1,184 @@
+# intents/informational/explain_topic.py
+
+from intents.base import BaseIntent, IntentType, IntentResult, ExecutionContext
+from typing import Dict
+
+
+class ExplainTopicIntent(BaseIntent):
+    """
+    Explain banking/financial topic - HYBRID intent
+
+    Uses both web search (for general info) and RAG (for internal policies).
+    Example: "explique moi les crypto-monnaies et notre politique"
+    """
+
+    # Metadata
+    name = "EXPLAIN_TOPIC"
+    description = "Expliquer un sujet bancaire ou financier"
+    category = "informational"
+
+    # Intent type
+    intent_type = IntentType.HYBRID
+    tools = ["web_search", "rag_search"]
+
+    # Training examples
+    examples = [
+        "explique moi les crypto-monnaies",
+        "c'est quoi la blockchain",
+        "comment fonctionne un credit immobilier",
+        "qu'est ce que le taux directeur",
+        "explique le KYC",
+        "c'est quoi un virement SEPA",
+        "comment marche la bourse",
+        "qu'est ce qu'un taux d'endettement",
+        "explique moi le forex",
+        "c'est quoi une carte virtuelle",
+        "comment fonctionne le mobile money",
+        "qu'est ce qu'un DAB",
+        "explique la politique de crédit",
+        "c'est quoi un relevé bancaire",
+        "comment faire un virement international"
+    ]
+
+    # Keyword rules
+    keywords = [
+        r'\b(explique|expliquer)\b',
+        r'\bc\'?est\s+quoi\b',
+        r'\bqu\'?est[- ]ce\s+que?\b',
+        r'\bcomment\s+(fonctionne|marche)\b',
+    ]
+
+    # Slot schema
+    slots = {
+        "required": ["topic"],
+        "optional": ["context"],
+        "schema": {
+            "topic": {
+                "type": "string",
+                "description": "Sujet à expliquer"
+            },
+            "context": {
+                "type": "string",
+                "description": "Contexte additionnel"
+            }
+        }
+    }
+
+    # No confirmation needed
+    requires_confirmation = False
+
+    def route(self, message: str, slots: Dict) -> IntentType:
+        """
+        Dynamic routing based on message
+
+        - If "notre politique" or "AFG/DBS" mentioned: prioritize RAG
+        - If "actualité" or "nouveau": prioritize web
+        - Otherwise: hybrid (both sources)
+        """
+        message_lower = message.lower()
+
+        # Check for internal policy keywords
+        if any(word in message_lower for word in ['notre politique', 'politique afg', 'politique dbs', 'nos règles', 'notre procédure']):
+            return IntentType.INFORMATIONAL_INTERNAL
+
+        # Check for external/news keywords
+        if any(word in message_lower for word in ['actualité', 'nouveau', 'récent', 'tendance', 'marché']):
+            return IntentType.INFORMATIONAL_EXTERNAL
+
+        # Default: hybrid (use both)
+        return IntentType.HYBRID
+
+    def execute(self, slots: Dict, context: ExecutionContext) -> IntentResult:
+        """Execute topic explanation"""
+        topic = slots.get('topic', 'sujet inconnu')
+
+        web_results = []
+        rag_results = []
+
+        try:
+            # Search web if available
+            if context.web_search_tool:
+                try:
+                    web_results = context.web_search_tool.search(
+                        query=f"{topic} explication finance banque",
+                        num_results=3,
+                        language="fr"
+                    )
+                except Exception as e:
+                    print(f"⚠️  Web search failed: {e}")
+
+            # Search internal docs if available
+            if context.rag_tool:
+                try:
+                    rag_results = context.rag_tool.search(
+                        query=f"{topic} politique procédure",
+                        top_k=3
+                    )
+                except Exception as e:
+                    print(f"⚠️  RAG search failed: {e}")
+
+            # Check if we have any results
+            if not web_results and not rag_results:
+                return IntentResult(
+                    success=False,
+                    data={},
+                    error=f"Aucune information trouvée sur '{topic}'"
+                )
+
+            # Return combined results
+            return IntentResult(
+                success=True,
+                data={
+                    'topic': topic,
+                    'web_sources': web_results,
+                    'internal_sources': rag_results
+                },
+                sources=[
+                    {'type': 'web', 'count': len(web_results)},
+                    {'type': 'rag', 'count': len(rag_results)}
+                ]
+            )
+
+        except Exception as e:
+            return IntentResult(
+                success=False,
+                data={},
+                error=f"Erreur lors de la recherche: {str(e)}"
+            )
+
+    def format_response(self, result: IntentResult, slots: Dict) -> str:
+        """
+        Format explanation response
+
+        For HYBRID intents, the response should be generated by LLM
+        using the sources as context. This is just a fallback.
+        """
+        if not result.success:
+            return f"❌ {result.error}"
+
+        data = result.data
+        topic = data.get('topic', '')
+        web_sources = data.get('web_sources', [])
+        internal_sources = data.get('internal_sources', [])
+
+        response = f"📚 Informations sur : {topic}\n\n"
+
+        # Show internal sources first
+        if internal_sources:
+            response += "📁 Sources internes AFG/DBS:\n"
+            for i, source in enumerate(internal_sources[:2], 1):
+                content = source.get('content', '')[:200]
+                response += f"{i}. {content}...\n"
+                response += f"   ({source.get('doc_type', '')}, score: {source.get('score', 0):.2f})\n\n"
+
+        # Show web sources
+        if web_sources:
+            response += "🌐 Sources externes:\n"
+            for i, source in enumerate(web_sources[:2], 1):
+                response += f"{i}. {source.get('title', '')}\n"
+                response += f"   {source.get('snippet', '')[:150]}...\n"
+                response += f"   🔗 {source.get('url', '')}\n\n"
+
+        response += "\n💡 Note: Ces sources devraient être synthétisées par le LLM pour une réponse naturelle."
+
+        return response
