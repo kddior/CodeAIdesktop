@@ -79,6 +79,12 @@ def documents():
     return render_template('documents.html')
 
 
+@app.route('/test')
+def test():
+    """Simple test page for debugging"""
+    return render_template('test.html')
+
+
 @app.route('/api/chat', methods=['POST'])
 def chat():
     """Handle chat messages"""

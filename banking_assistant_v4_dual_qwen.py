@@ -68,13 +68,20 @@ class BankingAssistantV4:
         logger.info("Initializing NLU pipeline...")
         self.intent_detector = IntentDetector()
         self.slot_extractor = SlotExtractor()
-        self.dialogue_manager = DialogueManager()
-        self.response_generator = ResponseGenerator(llm_client=self.llm_client)
+        self.response_generator = ResponseGenerator(llm_model=self.llm_client)
         self.flow_router = FlowRouter()
 
         # Initialize backend
         logger.info("Initializing banking backend...")
         self.backend = BankingBackend()
+
+        # Initialize dialogue manager (needs all components above)
+        self.dialogue_manager = DialogueManager(
+            intent_detector=self.intent_detector,
+            slot_extractor=self.slot_extractor,
+            backend=self.backend,
+            response_generator=self.response_generator
+        )
 
         # Initialize RAG if enabled
         self.enable_rag = enable_rag
@@ -99,7 +106,7 @@ class BankingAssistantV4:
     def _get_session(self, session_id: str) -> SessionState:
         """Get or create session state."""
         if session_id not in self.sessions:
-            self.sessions[session_id] = SessionState(session_id=session_id)
+            self.sessions[session_id] = SessionState(user_id=session_id, session_id=session_id)
         return self.sessions[session_id]
 
     def chat(self, session_id: str, user_message: str) -> Dict[str, Any]:

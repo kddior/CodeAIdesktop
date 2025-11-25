@@ -1,5 +1,19 @@
 # Configuration for Banking Assistant
 
+# ============================================
+# Storage Paths (Using NVMe SSDs for speed)
+# ============================================
+# /data  (NVMe 1) - LLM models
+# /data2 (NVMe 2) - RAG, embeddings, documents
+MODELS_PATH = "/data/models"
+RAG_INDEX_PATH = "/data2/CodeAIdesktop/rag_index"
+EMBEDDINGS_CACHE_PATH = "/data2/CodeAIdesktop/embeddings"
+DOCUMENTS_PATH = "/data2/CodeAIdesktop/documents"
+
+# LLM Server Configuration
+LLM_SERVER_URL = "http://localhost:1234/v1"  # llama-cpp-python server
+LLM_MODEL_FILE = "/data/models/Qwen2.5-7B-Instruct-Q4_K_M.gguf"
+
 # Model Configuration
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"  # Smaller, faster model (80MB vs 2GB)
 LLM_MODEL = "Qwen/Qwen2.5-7B-Instruct"

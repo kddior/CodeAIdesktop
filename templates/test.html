@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Page</title>
+    <style>
+        body { font-family: Arial; padding: 50px; background: #f0f0f0; }
+        h1 { color: green; }
+        .box { background: white; padding: 20px; border: 2px solid green; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <h1>AFG Bank - Test Page</h1>
+    <div class="box">
+        <p>If you can see this, the server is working!</p>
+        <p>Server time: <span id="time"></span></p>
+    </div>
+    <div class="box">
+        <a href="/">Go to Chat Interface</a>
+    </div>
+    <script>
+        document.getElementById('time').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>
