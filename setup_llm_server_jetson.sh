@@ -34,9 +34,9 @@ sudo apt-get install -y build-essential cmake ninja-build
 echo "[2/4] Installing llama-cpp-python with CUDA..."
 echo "         This may take 5-10 minutes to compile..."
 
-# Set CUDA flags for Jetson
+# Set CUDA flags for Jetson (updated for llama.cpp 2024+)
 export CUDACXX=/usr/local/cuda/bin/nvcc
-export CMAKE_ARGS="-DLLAMA_CUBLAS=on -DCMAKE_CUDA_ARCHITECTURES=87"
+export CMAKE_ARGS="-DGGML_CUDA=on -DCMAKE_CUDA_ARCHITECTURES=87"
 export FORCE_CMAKE=1
 
 pip install --no-cache-dir llama-cpp-python
