@@ -1,0 +1,367 @@
+{
+  "banking_tests": [
+    {
+      "input": "quel est mon solde ?",
+      "expected_intent": "CONSULTER_SOLDE",
+      "description": "Basic balance inquiry"
+    },
+    {
+      "input": "combien j'ai sur mon compte",
+      "expected_intent": "CONSULTER_SOLDE",
+      "description": "Alternative balance inquiry"
+    },
+    {
+      "input": "je veux voir mon solde actuel",
+      "expected_intent": "CONSULTER_SOLDE",
+      "description": "Current balance request"
+    },
+    {
+      "input": "solde compte courant stp",
+      "expected_intent": "CONSULTER_SOLDE",
+      "description": "Checking account balance"
+    },
+    {
+      "input": "affiche moi le solde",
+      "expected_intent": "CONSULTER_SOLDE",
+      "description": "Display balance command"
+    },
+    {
+      "input": "je veux faire un virement",
+      "expected_intent": "FAIRE_VIREMENT",
+      "description": "Basic transfer request"
+    },
+    {
+      "input": "virement de 50000 FCFA à Pierre",
+      "expected_intent": "FAIRE_VIREMENT",
+      "description": "Transfer with amount and recipient"
+    },
+    {
+      "input": "transferer 100000 XOF a mon frere",
+      "expected_intent": "FAIRE_VIREMENT",
+      "description": "Transfer to family member"
+    },
+    {
+      "input": "envoyer de l'argent a Fatou",
+      "expected_intent": "FAIRE_VIREMENT",
+      "description": "Send money request"
+    },
+    {
+      "input": "je dois payer 250000 fcfa a un fournisseur",
+      "expected_intent": "FAIRE_VIREMENT",
+      "description": "Payment to supplier"
+    },
+    {
+      "input": "virement international vers la France",
+      "expected_intent": "FAIRE_VIREMENT",
+      "description": "International transfer"
+    },
+    {
+      "input": "je veux mon releve de compte",
+      "expected_intent": "OBTENIR_RELEVE",
+      "description": "Account statement request"
+    },
+    {
+      "input": "releve du mois dernier",
+      "expected_intent": "OBTENIR_RELEVE",
+      "description": "Previous month statement"
+    },
+    {
+      "input": "envoie moi un extrait de compte",
+      "expected_intent": "OBTENIR_RELEVE",
+      "description": "Account extract request"
+    },
+    {
+      "input": "je voudrais obtenir mon releve bancaire",
+      "expected_intent": "OBTENIR_RELEVE",
+      "description": "Bank statement formal request"
+    },
+    {
+      "input": "simulation de credit immobilier",
+      "expected_intent": "SIMULATION_CREDIT",
+      "description": "Mortgage simulation"
+    },
+    {
+      "input": "je veux simuler un pret de 5 millions",
+      "expected_intent": "SIMULATION_CREDIT",
+      "description": "Loan simulation with amount"
+    },
+    {
+      "input": "credit auto sur 36 mois",
+      "expected_intent": "SIMULATION_CREDIT",
+      "description": "Car loan with duration"
+    },
+    {
+      "input": "combien ca va me couter un pret de 10 millions sur 5 ans",
+      "expected_intent": "SIMULATION_CREDIT",
+      "description": "Loan cost inquiry"
+    },
+    {
+      "input": "je voudrais emprunter pour acheter une maison",
+      "expected_intent": "SIMULATION_CREDIT",
+      "description": "Home purchase loan"
+    },
+    {
+      "input": "pourquoi ce debit sur mon compte",
+      "expected_intent": "DISCUSSION_COMPTE",
+      "description": "Debit inquiry"
+    },
+    {
+      "input": "c'est quoi cette operation de 5000 xof",
+      "expected_intent": "DISCUSSION_COMPTE",
+      "description": "Transaction question"
+    },
+    {
+      "input": "je comprends pas ce mouvement",
+      "expected_intent": "DISCUSSION_COMPTE",
+      "description": "Movement clarification"
+    },
+    {
+      "input": "pourquoi mon compte est negatif",
+      "expected_intent": "DISCUSSION_COMPTE",
+      "description": "Negative balance question"
+    },
+    {
+      "input": "expliquez moi ces frais bancaires",
+      "expected_intent": "DISCUSSION_COMPTE",
+      "description": "Bank fees explanation"
+    },
+    {
+      "input": "mes dernieres transactions",
+      "expected_intent": "DISCUSSION_COMPTE",
+      "description": "Recent transactions"
+    },
+    {
+      "input": "historique des operations",
+      "expected_intent": "DISCUSSION_COMPTE",
+      "description": "Transaction history"
+    }
+  ],
+
+  "coding_tests": [
+    {
+      "input": "write a python function to calculate factorial",
+      "expected_intent": "OTHER",
+      "description": "Programming request"
+    },
+    {
+      "input": "how do I sort a list in JavaScript",
+      "expected_intent": "OTHER",
+      "description": "Coding question"
+    },
+    {
+      "input": "ecris moi une fonction pour calculer fibonacci",
+      "expected_intent": "OTHER",
+      "description": "French coding request"
+    },
+    {
+      "input": "SQL query to join two tables",
+      "expected_intent": "OTHER",
+      "description": "Database query"
+    },
+    {
+      "input": "debug this code for me",
+      "expected_intent": "OTHER",
+      "description": "Code debugging"
+    },
+    {
+      "input": "what is a binary search tree",
+      "expected_intent": "OTHER",
+      "description": "Computer science concept"
+    },
+    {
+      "input": "comment faire un API REST en Python",
+      "expected_intent": "OTHER",
+      "description": "API development question"
+    },
+    {
+      "input": "explain machine learning",
+      "expected_intent": "OTHER",
+      "description": "ML concept explanation"
+    },
+    {
+      "input": "create a React component",
+      "expected_intent": "OTHER",
+      "description": "Frontend development"
+    },
+    {
+      "input": "how to use git rebase",
+      "expected_intent": "OTHER",
+      "description": "Version control question"
+    }
+  ],
+
+  "general_tests": [
+    {
+      "input": "bonjour",
+      "expected_intent": "OTHER",
+      "description": "Greeting"
+    },
+    {
+      "input": "quelle heure est-il",
+      "expected_intent": "OTHER",
+      "description": "Time question"
+    },
+    {
+      "input": "qui a gagne la coupe du monde",
+      "expected_intent": "OTHER",
+      "description": "Sports question"
+    },
+    {
+      "input": "raconte moi une blague",
+      "expected_intent": "OTHER",
+      "description": "Joke request"
+    },
+    {
+      "input": "quelle est la capitale de la France",
+      "expected_intent": "OTHER",
+      "description": "Geography question"
+    },
+    {
+      "input": "comment faire un gateau au chocolat",
+      "expected_intent": "OTHER",
+      "description": "Cooking recipe"
+    },
+    {
+      "input": "qui est le president du Senegal",
+      "expected_intent": "OTHER",
+      "description": "Political question"
+    },
+    {
+      "input": "il va pleuvoir demain",
+      "expected_intent": "OTHER",
+      "description": "Weather question"
+    },
+    {
+      "input": "recommande moi un bon restaurant",
+      "expected_intent": "OTHER",
+      "description": "Restaurant recommendation"
+    },
+    {
+      "input": "c'est quoi le sens de la vie",
+      "expected_intent": "OTHER",
+      "description": "Philosophical question"
+    },
+    {
+      "input": "how are you doing today",
+      "expected_intent": "OTHER",
+      "description": "English greeting"
+    },
+    {
+      "input": "translate this to English",
+      "expected_intent": "OTHER",
+      "description": "Translation request"
+    },
+    {
+      "input": "what is 2+2",
+      "expected_intent": "OTHER",
+      "description": "Simple math"
+    },
+    {
+      "input": "tell me a story",
+      "expected_intent": "OTHER",
+      "description": "Story request"
+    },
+    {
+      "input": "who won the election",
+      "expected_intent": "OTHER",
+      "description": "Politics"
+    }
+  ],
+
+  "edge_cases": [
+    {
+      "input": "",
+      "expected_intent": "OTHER",
+      "description": "Empty input"
+    },
+    {
+      "input": "solde virement credit",
+      "expected_intent": "OTHER",
+      "description": "Ambiguous multiple intents"
+    },
+    {
+      "input": "aaaaaaaaaaaaaaaaaaaaa",
+      "expected_intent": "OTHER",
+      "description": "Gibberish"
+    },
+    {
+      "input": "123456789",
+      "expected_intent": "OTHER",
+      "description": "Only numbers"
+    },
+    {
+      "input": "!@#$%^&*()",
+      "expected_intent": "OTHER",
+      "description": "Only special characters"
+    },
+    {
+      "input": "solde solde solde solde solde",
+      "expected_intent": "CONSULTER_SOLDE",
+      "description": "Repeated word"
+    }
+  ],
+
+  "mixed_language_tests": [
+    {
+      "input": "balance de mon compte",
+      "expected_intent": "CONSULTER_SOLDE",
+      "description": "French-English mix (balance)"
+    },
+    {
+      "input": "je veux transfer money",
+      "expected_intent": "FAIRE_VIREMENT",
+      "description": "French-English transfer"
+    },
+    {
+      "input": "credit simulation please",
+      "expected_intent": "SIMULATION_CREDIT",
+      "description": "Mixed language credit"
+    }
+  ],
+
+  "complex_scenarios": [
+    {
+      "input": "je veux faire un virement de 500000 FCFA à Mamadou pour payer la facture d'electricite du mois de janvier",
+      "expected_intent": "FAIRE_VIREMENT",
+      "description": "Complex transfer with full details"
+    },
+    {
+      "input": "simulation credit immobilier 50 millions sur 20 ans avec taux preferentiel pour fonctionnaire",
+      "expected_intent": "SIMULATION_CREDIT",
+      "description": "Complex loan simulation"
+    },
+    {
+      "input": "mon solde compte epargne et compte courant aussi le releve du dernier mois",
+      "expected_intent": "CONSULTER_SOLDE",
+      "description": "Multiple requests in one (should prioritize first)"
+    },
+    {
+      "input": "pourquoi j'ai ete debite de 15000 XOF hier alors que je n'ai rien achete",
+      "expected_intent": "DISCUSSION_COMPTE",
+      "description": "Complex account discussion"
+    }
+  ],
+
+  "amount_variations": [
+    {
+      "input": "virement de cinquante mille francs",
+      "expected_intent": "FAIRE_VIREMENT",
+      "description": "Amount in words"
+    },
+    {
+      "input": "transferer 50k",
+      "expected_intent": "FAIRE_VIREMENT",
+      "description": "Amount with k suffix"
+    },
+    {
+      "input": "envoyer 2.5 millions",
+      "expected_intent": "FAIRE_VIREMENT",
+      "description": "Amount in millions"
+    },
+    {
+      "input": "credit de 10M",
+      "expected_intent": "SIMULATION_CREDIT",
+      "description": "Amount with M suffix"
+    }
+  ]
+}
