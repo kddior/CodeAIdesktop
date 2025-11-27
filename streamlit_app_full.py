@@ -201,7 +201,7 @@ def init_session_state():
             try:
                 st.session_state.assistant = BankingAssistantV4(
                     enable_rag=True,
-                    fast_model="qwen2.5-7b-instruct",
+                    fast_model="mistral-7b-instruct",
                     quality_model="qwen2.5-14b-instruct"
                 )
                 st.session_state.initialized = True
@@ -309,12 +309,33 @@ with tab1:
                 # Show metadata for assistant messages
                 if message["role"] == "assistant" and "metadata" in message:
                     meta = message["metadata"]
-                    col1, col2 = st.columns(2)
+                    mode = meta.get('mode', meta.get('intent', 'N/A'))
+                    flow_name = meta.get('flow_name', '')
+                    display_mode = f"{mode}" + (f"/{flow_name}" if flow_name else "")
+                    col1, col2, col3, col4 = st.columns(4)
                     with col1:
-                        st.caption(f"🎯 Intent: **{meta.get('intent', 'N/A')}**")
+                        st.caption(f"🎯 Mode: **{display_mode}**")
                     with col2:
                         confidence = meta.get('confidence', 0)
                         st.caption(f"📊 Confidence: **{confidence:.2%}**")
+                    with col3:
+                        if meta.get('rag_used'):
+                            st.caption(f"📚 RAG: **{meta.get('rag_count', 0)} docs**")
+                        else:
+                            st.caption(f"📚 RAG: **non**")
+                    with col4:
+                        response_time = meta.get('response_time_ms', 0)
+                        if response_time:
+                            if response_time < 1000:
+                                time_display = f"{response_time}ms"
+                            else:
+                                time_display = f"{response_time/1000:.1f}s"
+                            st.caption(f"⏱️ Temps: **{time_display}**")
+                    # Show model used
+                    model_used = meta.get('model_used', '')
+                    if model_used and model_used != 'N/A':
+                        model_short = model_used.split('/')[-1] if '/' in model_used else model_used
+                        st.caption(f"🤖 Modèle: **{model_short}**")
 
         # Chat input
         if prompt := st.chat_input("Saisissez votre message..."):
@@ -328,30 +349,68 @@ with tab1:
             with st.chat_message("assistant"):
                 with st.spinner("Réflexion en cours..."):
                     try:
+                        # Start timing
+                        start_time = time.time()
+
                         result = st.session_state.assistant.chat(
                             st.session_state.user_id,
                             prompt
                         )
 
+                        # Calculate elapsed time
+                        elapsed_time = time.time() - start_time
+                        elapsed_ms = int(elapsed_time * 1000)
+
                         response = result.get('response', 'Désolé, une erreur est survenue.')
-                        intent = result.get('intent', 'UNKNOWN')
+                        # Use conversation_mode instead of legacy intent
+                        mode = result.get('conversation_mode', result.get('intent', 'UNKNOWN'))
+                        flow_name = result.get('flow_name', '')
                         confidence = result.get('confidence', 0.0)
+                        rag_used = result.get('rag_used', False)
+                        rag_count = result.get('rag_results_count', 0)
+                        model_used = result.get('model_used', 'N/A')
 
                         st.markdown(response)
 
-                        col1, col2 = st.columns(2)
+                        # Display metrics with timing
+                        col1, col2, col3, col4 = st.columns(4)
                         with col1:
-                            st.caption(f"🎯 Intent: **{intent}**")
+                            display_mode = f"{mode}"
+                            if flow_name:
+                                display_mode += f"/{flow_name}"
+                            st.caption(f"🎯 Mode: **{display_mode}**")
                         with col2:
                             st.caption(f"📊 Confidence: **{confidence:.2%}**")
+                        with col3:
+                            if rag_used:
+                                st.caption(f"📚 RAG: **{rag_count} docs**")
+                            else:
+                                st.caption(f"📚 RAG: **non**")
+                        with col4:
+                            # Format timing display
+                            if elapsed_time < 1:
+                                time_display = f"{elapsed_ms}ms"
+                            else:
+                                time_display = f"{elapsed_time:.1f}s"
+                            st.caption(f"⏱️ Temps: **{time_display}**")
+
+                        # Show model used in a separate line
+                        if model_used and model_used != 'N/A':
+                            model_short = model_used.split('/')[-1] if '/' in model_used else model_used
+                            st.caption(f"🤖 Modèle: **{model_short}**")
 
                         # Save to history
                         st.session_state.chat_history.append({
                             "role": "assistant",
                             "content": response,
                             "metadata": {
-                                "intent": intent,
+                                "mode": mode,
+                                "flow_name": flow_name,
                                 "confidence": confidence,
+                                "rag_used": rag_used,
+                                "rag_count": rag_count,
+                                "model_used": model_used,
+                                "response_time_ms": elapsed_ms,
                                 "timestamp": datetime.now().isoformat()
                             }
                         })
@@ -762,25 +821,36 @@ with tab4:
                 st.write(f"**Total: {len(all_docs)} documents**")
 
                 for doc in all_docs:
-                    with st.expander(f"📄 {doc.get('name', 'Unnamed')}"):
+                    with st.expander(f"📄 {doc.get('doc_name', 'Unnamed')}"):
                         col1, col2, col3 = st.columns([2, 1, 1])
 
+                        # Parse metadata if it's a JSON string
+                        metadata = doc.get('metadata', {})
+                        if isinstance(metadata, str):
+                            try:
+                                metadata = json.loads(metadata)
+                            except:
+                                metadata = {}
+
                         with col1:
-                            st.write(f"**ID:** {doc.get('id', 'N/A')}")
-                            st.write(f"**Type:** {doc.get('type', 'N/A')}")
-                            st.write(f"**Pays:** {doc.get('metadata', {}).get('country', 'N/A')}")
+                            st.write(f"**ID:** {doc.get('doc_id', 'N/A')}")
+                            st.write(f"**Type:** {doc.get('doc_type', 'N/A')}")
+                            st.write(f"**Pays:** {doc.get('country', metadata.get('country', 'N/A') if metadata else 'N/A')}")
 
                         with col2:
-                            st.write(f"**Chunks:** {doc.get('chunk_count', 0)}")
-                            upload_date = doc.get('metadata', {}).get('upload_date', 'N/A')
-                            if upload_date != 'N/A':
-                                upload_date = datetime.fromisoformat(upload_date).strftime("%Y-%m-%d %H:%M")
-                            st.write(f"**Upload:** {upload_date}")
+                            st.write(f"**Chunks:** {doc.get('num_chunks', 0)}")
+                            created_at = doc.get('created_at', 'N/A')
+                            if created_at != 'N/A' and created_at:
+                                try:
+                                    created_at = datetime.fromisoformat(str(created_at)).strftime("%Y-%m-%d %H:%M")
+                                except:
+                                    pass
+                            st.write(f"**Upload:** {created_at}")
 
                         with col3:
-                            if st.button(f"🗑️ Supprimer", key=f"del_{doc.get('id')}", use_container_width=True):
+                            if st.button(f"🗑️ Supprimer", key=f"del_{doc.get('doc_id')}", use_container_width=True):
                                 try:
-                                    rag.registry.delete(doc.get('id'))
+                                    rag.registry.delete_document(doc.get('doc_id'))
                                     st.success("Document supprimé")
                                     st.rerun()
                                 except Exception as e:
@@ -855,12 +925,13 @@ with tab5:
             taux_annuel = st.number_input("Taux annuel (%)", min_value=0.0, value=8.0, step=0.1)
             duree_mois = st.number_input("Durée (mois)", min_value=1, value=240, step=12)
 
-        if st.button("🔢 Calculer", type="primary", use_container_width=True):
+        if st.button("🔢 Calculer", type="primary", use_container_width=True, key="calc_capacite"):
             inputs = {
-                'revenu_mensuel': revenu_mensuel,
-                'charges_mensuelles': charges_mensuelles,
-                'taux_annuel': taux_annuel,
-                'duree_mois': duree_mois
+                'revenu_mensuel_net': revenu_mensuel,
+                'charges_mensuelles_existantes': charges_mensuelles,
+                'taux_endettement_max': 0.33,  # 33% standard
+                'taux_credit_annuel': taux_annuel / 100,  # Convert % to decimal
+                'duree_annees': duree_mois / 12  # Convert months to years
             }
 
             result = FinancialCalculator.calculate("capacite_emprunt", inputs)
@@ -870,11 +941,11 @@ with tab5:
 
                 col1, col2, col3 = st.columns(3)
                 with col1:
-                    st.metric("Capacité d'Emprunt", f"{res['capacite_emprunt']:,.0f} XOF")
+                    st.metric("Capacité d'Emprunt", f"{res['montant_max_pret']:,.0f} XOF")
                 with col2:
-                    st.metric("Mensualité Max", f"{res['mensualite_max']:,.0f} XOF")
+                    st.metric("Mensualité Disponible", f"{res['mensualite_disponible_nouveau_credit']:,.0f} XOF")
                 with col3:
-                    st.metric("Taux Endettement", f"{res['taux_endettement']:.1f}%")
+                    st.metric("Taux Endettement Actuel", f"{res['taux_endettement_actuel']*100:.1f}%")
 
                 # Formula explanation
                 formula = CalculatorFormulas.get_formula_explanation("capacite_emprunt", inputs, res)
@@ -896,7 +967,7 @@ with tab5:
             taux_annuel = st.number_input("Taux annuel (%)", min_value=0.0, value=8.5, step=0.1)
             frais_dossier_pct = st.number_input("Frais de dossier (%)", min_value=0.0, value=1.0, step=0.1)
 
-        if st.button("🔢 Calculer", type="primary", use_container_width=True):
+        if st.button("🔢 Calculer", type="primary", use_container_width=True, key="calc_simulation"):
             inputs = {
                 'montant': montant,
                 'taux_annuel': taux_annuel,
@@ -941,7 +1012,7 @@ with tab5:
 
         marge_banque_pct = st.slider("Marge banque (%)", min_value=0.0, max_value=5.0, value=1.5, step=0.1)
 
-        if st.button("🔢 Calculer", type="primary", use_container_width=True):
+        if st.button("🔢 Calculer", type="primary", use_container_width=True, key="calc_fx"):
             inputs = {
                 'montant': montant,
                 'taux_change': taux_change,
@@ -1034,7 +1105,7 @@ with tab6:
             help="Taux de commission de la banque"
         )
 
-    if st.button("🔢 Calculer", type="primary", use_container_width=True):
+    if st.button("🔢 Calculer", type="primary", use_container_width=True, key="calc_garantie"):
         # Calculate
         montant_garantie = montant_marche * (taux_garantie / 100)
         commission_annuelle = montant_garantie * (taux_commission / 100)
@@ -1080,8 +1151,8 @@ Réponds en français, de manière professionnelle et concise."""
 
                 with st.spinner("Analyse IA en cours..."):
                     try:
-                        # Use LLM client directly
-                        llm_client = LMStudioClient()
+                        # Use LLM client directly - 14B for advanced analysis
+                        llm_client = LMStudioClient(port=1235)
                         llm_response = llm_client.generate(
                             verification_prompt,
                             temperature=0.3,
@@ -1181,7 +1252,7 @@ Réponds en JSON structuré en français."""
 
                                 with st.spinner("Analyse IA approfondie en cours..."):
                                     try:
-                                        llm_client = LMStudioClient(model_name="qwen2.5-14b-instruct")
+                                        llm_client = LMStudioClient(model_name="qwen2.5-14b-instruct", port=1235)
                                         analysis_response = llm_client.generate(
                                             analysis_prompt,
                                             temperature=0.2,
@@ -1254,7 +1325,7 @@ QUESTION DU CLIENT:
 
 Réponds de manière précise et professionnelle en français."""
 
-                            llm_client = LMStudioClient()
+                            llm_client = LMStudioClient(port=1235)  # 14B for legal analysis
                             response = llm_client.generate(
                                 context_prompt,
                                 temperature=0.3,

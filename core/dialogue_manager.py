@@ -338,3 +338,41 @@ class DialogueManager:
             keys_to_delete = [k for k in self.conversations.keys() if k.startswith(f"{user_id}_")]
             for k in keys_to_delete:
                 del self.conversations[k]
+
+    def update(self, session, intent: str, slots: Dict, user_message: str) -> Dict:
+        """
+        Update dialogue state based on new message
+
+        Args:
+            session: SessionState object
+            intent: Detected intent
+            slots: Extracted slots dict
+            user_message: Original user message
+
+        Returns:
+            Dictionary with dialogue state info
+        """
+        # Get or create conversation context
+        context = self.get_or_create_context(session.user_id, session.session_id)
+
+        # Update context with new intent and slots
+        context.intent = intent
+        if isinstance(slots, dict) and 'slots' in slots:
+            # Handle nested slots structure
+            extracted_slots = slots.get('slots', {})
+            for k, v in extracted_slots.items():
+                if isinstance(v, dict) and 'value' in v:
+                    context.slots[k] = v['value']
+                else:
+                    context.slots[k] = v
+        elif isinstance(slots, dict):
+            context.slots.update(slots)
+
+        # Return dialogue state
+        return {
+            'state': context.state.value,
+            'intent': intent,
+            'slots': context.slots,
+            'missing_slots': context.missing_slots,
+            'needs_confirmation': context.confirmation_pending
+        }

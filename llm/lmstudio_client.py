@@ -10,13 +10,14 @@ from llm.openai_client import OpenAIClient
 class LMStudioClient(OpenAIClient):
     """
     LM Studio client wrapper
-    Uses OpenAI-compatible API on port 1234
+    Uses OpenAI-compatible API on port 1234 (7B) or 1235 (14B)
     """
 
     def __init__(
         self,
         model_name: str = "qwen2.5-14b-instruct-q5_k_m",
-        timeout: int = 120
+        timeout: int = 120,
+        port: int = 1234
     ):
         """
         Initialize LM Studio client
@@ -24,9 +25,10 @@ class LMStudioClient(OpenAIClient):
         Args:
             model_name: Model loaded in LM Studio (default: Qwen 14B Q5_K_M)
             timeout: Request timeout in seconds
+            port: Server port (1234 for 7B, 1235 for 14B)
         """
         super().__init__(
-            base_url="http://localhost:1234/v1",
+            base_url=f"http://localhost:{port}/v1",
             model_name=model_name,
             api_key="lm-studio",  # LM Studio doesn't need a real key
             timeout=timeout

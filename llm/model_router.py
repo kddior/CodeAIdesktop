@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-Model Router for Dual-LLM Strategy
+Model Router for Dual-LLM Strategy (Qwen 7B + 14B)
 Intelligently routes queries between:
-- DeepSeek-R1-Distill-14B: Fast banking queries, calculations
-- Qwen 2.5 32B: Complex analysis, GPT-4 level reasoning
+- Qwen 2.5 7B (port 1234): Fast banking queries, greetings, simple operations
+- Qwen 2.5 14B (port 1235): Complex analysis, RAG questions, multi-step reasoning
 """
 
 from typing import Dict, Any
@@ -15,26 +15,35 @@ class ModelRouter:
     Routes queries to appropriate model based on complexity.
 
     Strategy:
-    - DeepSeek (fast): Simple banking queries, calculations, quick responses
-    - Qwen 32B (quality): Complex analysis, ambiguous intents, multi-step reasoning
+    - Qwen 7B (fast): Simple banking queries, greetings, quick responses
+    - Qwen 14B (quality): Complex analysis, RAG, ambiguous intents, multi-step reasoning
     """
 
-    # Intents that require high-quality reasoning (use Qwen 32B)
+    # ==========================================================================
+    # QWEN 14B - Complex tasks requiring quality reasoning
+    # ==========================================================================
     COMPLEX_INTENTS = {
-        'CODE_ASSIST',
-        'SIMULATION_CREDIT',
-        'UNKNOWN',
-        'DEMANDE_AIDE',
+        'CODE_ASSIST',           # Code assistance
+        'SIMULATION_CREDIT',     # Credit simulations (calculations)
+        'UNKNOWN',               # Unclear intent - needs better understanding
+        'DEMANDE_AIDE',          # Help requests
+        'RAG_QUESTION',          # Questions requiring document search
+        'ANALYSE_JURIDIQUE',     # Legal analysis
     }
 
-    # Intents that are fast and simple (use DeepSeek)
+    # ==========================================================================
+    # QWEN 7B - Fast simple tasks (DEFAULT)
+    # ==========================================================================
     SIMPLE_INTENTS = {
-        'CONSULTER_SOLDE',
-        'FAIRE_VIREMENT',
-        'OBTENIR_RELEVE',
-        'SALUTATION',
-        'REMERCIEMENT',
-        'SWITCH_MODE',
+        'CONSULTER_SOLDE',       # Check balance
+        'FAIRE_VIREMENT',        # Make transfer
+        'OBTENIR_RELEVE',        # Get statement
+        'SALUTATION',            # Greetings (formal)
+        'GREETING',              # Greetings (informal)
+        'REMERCIEMENT',          # Thanks
+        'SWITCH_MODE',           # Mode switching
+        'DISCUSSION_COMPTE',     # Account discussion
+        'OTHER',                 # General conversation
     }
 
     # Complexity indicators in query text
@@ -45,13 +54,13 @@ class ModelRouter:
         r'\b(si.*alors|dans le cas où|dépend de)\b',  # Conditional logic
     ]
 
-    def __init__(self, fast_model: str = "deepseek-r1:14b", quality_model: str = "qwen2.5:32b-instruct"):
+    def __init__(self, fast_model: str = "qwen2.5-7b-instruct", quality_model: str = "qwen2.5-14b-instruct"):
         """
         Initialize model router.
 
         Args:
-            fast_model: Model name for fast queries (DeepSeek)
-            quality_model: Model name for quality queries (Qwen 32B)
+            fast_model: Model name for fast queries (Qwen 7B)
+            quality_model: Model name for quality queries (Qwen 14B)
         """
         self.fast_model = fast_model
         self.quality_model = quality_model
@@ -149,21 +158,21 @@ class ModelRouter:
 
     def get_model_info(self, model_name: str) -> Dict[str, Any]:
         """Get information about a model."""
-        if model_name == self.fast_model:
+        if model_name == self.fast_model or 'mistral' in model_name.lower() or '7b' in model_name.lower():
             return {
-                'name': 'DeepSeek-R1-Distill-14B',
-                'speed': 'Fast',
+                'name': model_name,
+                'speed': 'Fast (~2-4s)',
                 'quality': 'Good',
-                'vram_gb': '12-14',
-                'use_case': 'Banking queries, calculations'
+                'vram_gb': '4-5',
+                'use_case': 'Banking queries, greetings, simple operations'
             }
-        elif model_name == self.quality_model:
+        elif model_name == self.quality_model or '14b' in model_name.lower():
             return {
-                'name': 'Qwen 2.5 32B',
-                'speed': 'Moderate',
-                'quality': 'Excellent (GPT-4 level)',
-                'vram_gb': '22-23',
-                'use_case': 'Complex analysis, reasoning'
+                'name': model_name,
+                'speed': 'Moderate (~5-10s)',
+                'quality': 'Excellent',
+                'vram_gb': '8-10',
+                'use_case': 'Complex analysis, RAG, credit simulations'
             }
         else:
             return {

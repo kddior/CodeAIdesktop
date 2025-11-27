@@ -36,8 +36,8 @@ class AFGBankRAG:
     def __init__(
         self,
         document_path: str = "afg_bank_tariff.txt",
-        index_path: str = "rag/afg_bank_index",
-        embedding_model: str = "BAAI/bge-m3",
+        index_path: str = "/data2/CodeAIdesktop/rag/afg_bank_index",
+        embedding_model: str = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
         chunk_size: int = 800,
         chunk_overlap: int = 160,
         top_k: int = 5
@@ -557,18 +557,103 @@ class AFGBankRAG:
         formatted += "=== FIN DOCUMENTATION ===\n"
         return formatted
 
-    def answer_question(self, question: str, top_k: int = None) -> Dict:
+    def retrieve_with_context(self, query: str, top_k: int = None, context_size: int = 1) -> List[Dict]:
+        """
+        Parent-Child Retrieval: Match on small chunks, return with surrounding context
+
+        This improves retrieval by:
+        1. Matching precise chunks (child)
+        2. Returning parent context (surrounding chunks)
+
+        Args:
+            query: User query
+            top_k: Number of child chunks to match (default: self.top_k)
+            context_size: Number of chunks before/after to include (default: 1)
+
+        Returns:
+            List of results with expanded context
+        """
+        if top_k is None:
+            top_k = self.top_k
+
+        # Get matched chunks (children)
+        matched_chunks = self.retrieve(query, top_k)
+
+        if not matched_chunks:
+            return []
+
+        # Expand each match with surrounding context (parent)
+        expanded_results = []
+        seen_chunks = set()  # Avoid duplicate chunks
+
+        for result in matched_chunks:
+            chunk_id = result['metadata']['chunk_id']
+
+            # Calculate context range
+            start_id = max(0, chunk_id - context_size)
+            end_id = min(len(self.chunks) - 1, chunk_id + context_size)
+
+            # Build expanded text with context
+            context_chunks = []
+            context_ids = []
+
+            for cid in range(start_id, end_id + 1):
+                if cid not in seen_chunks and cid < len(self.chunks):
+                    context_chunks.append(self.chunks[cid])
+                    context_ids.append(cid)
+                    seen_chunks.add(cid)
+
+            if context_chunks:
+                # Combine chunks into parent context
+                expanded_text = "\n\n".join(context_chunks)
+
+                expanded_results.append({
+                    'text': expanded_text,
+                    'score': result['score'],
+                    'metadata': {
+                        **result['metadata'],
+                        'context_chunk_ids': context_ids,
+                        'matched_chunk_id': chunk_id,
+                        'is_expanded': True
+                    },
+                    'source': result.get('source', 'hybrid')
+                })
+
+        return expanded_results
+
+    def retrieve_parent_child(self, query: str, top_k: int = None) -> List[Dict]:
+        """
+        Alias for retrieve_with_context - Parent-Child retrieval pattern
+
+        Matches on precise child chunks but returns expanded parent context.
+        This helps when related information is split across chunks.
+
+        Args:
+            query: User query
+            top_k: Number of results
+
+        Returns:
+            Results with parent context included
+        """
+        return self.retrieve_with_context(query, top_k, context_size=1)
+
+    def answer_question(self, question: str, top_k: int = None, use_parent_child: bool = True) -> Dict:
         """
         Answer banking question using RAG
 
         Args:
             question: User question
             top_k: Number of results to retrieve
+            use_parent_child: If True, use Parent-Child retrieval for better context
 
         Returns:
             Dict with 'question', 'results', 'formatted_context'
         """
-        results = self.retrieve(question, top_k)
+        if use_parent_child:
+            results = self.retrieve_with_context(question, top_k, context_size=1)
+        else:
+            results = self.retrieve(question, top_k)
+
         formatted_context = self.format_results_for_llm(results)
 
         return {

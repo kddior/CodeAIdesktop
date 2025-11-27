@@ -21,7 +21,7 @@ DOCUMENTS_PATH = "/data2/CodeAIdesktop/documents"
 
 # LLM Server Configuration
 LLM_SERVER_URL = "http://localhost:1234/v1"  # llama-cpp-python server
-LLM_MODEL_FILE = "/data/models/Qwen2.5-7B-Instruct-Q4_K_M.gguf"
+LLM_MODEL_FILE = "/data/models/Qwen2.5-7B-Instruct-Q4_K_M.gguf"  # Using 7B (14B file corrupted, needs re-download)
 
 # Model Configuration
 # IMPORTANT FOR JETSON: Use multilingual embedding model for French banking

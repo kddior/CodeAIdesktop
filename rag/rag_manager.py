@@ -27,9 +27,9 @@ class RAGManager:
     """
 
     def __init__(self,
-                 registry_path: str = "rag/registry.db",
-                 documents_dir: str = "rag/documents",
-                 embedding_model: str = "BAAI/bge-m3"):
+                 registry_path: str = "/data2/CodeAIdesktop/rag/registry.db",
+                 documents_dir: str = "/data2/CodeAIdesktop/rag/documents",
+                 embedding_model: str = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"):
         """
         Initialize RAG Manager
 
@@ -384,6 +384,33 @@ class RAGManager:
         """Get system statistics"""
         return self.registry.get_stats()
 
+    def search(self, query: str, top_k: int = 5, doc_filter: Dict = None) -> List[Dict]:
+        """
+        Simple search interface for the banking assistant
+
+        Args:
+            query: User query
+            top_k: Number of results to return
+            doc_filter: Optional filters
+
+        Returns:
+            List of results with 'content', 'doc_name', and 'score'
+        """
+        results = self.retrieve_multi_document(query, top_k=top_k, doc_filter=doc_filter)
+
+        # Format for banking assistant
+        formatted_results = []
+        for result in results:
+            formatted_results.append({
+                'content': result.get('text', ''),
+                'doc_name': result.get('metadata', {}).get('doc_name', 'Unknown'),
+                'doc_type': result.get('metadata', {}).get('doc_type', 'general'),
+                'score': result.get('score', 0.0),
+                'metadata': result.get('metadata', {})
+            })
+
+        return formatted_results
+
     def _generate_content_summary(self, rag: AFGBankRAG, doc_name: str, doc_type: str) -> str:
         """
         Generate a brief content summary for LLM context
@@ -430,6 +457,39 @@ class RAGManager:
             summary = f"Aperçu: {preview}..."
 
         return summary
+
+    def get_document_summaries(self) -> List[str]:
+        """
+        Get summaries of all available documents for QWEN #1 classifier context
+
+        This method provides the classifier with awareness of what documents
+        are available, helping it determine when needs_rag should be true.
+
+        Returns:
+            List of formatted document summary strings
+        """
+        summaries = []
+        ready_docs = self.registry.get_ready_documents()
+
+        for doc in ready_docs:
+            doc_name = doc.get('doc_name', 'Unknown')
+            doc_type = doc.get('doc_type', 'general')
+            content_summary = doc.get('content_summary', '')
+
+            # Format: "Type: Name - Summary"
+            if content_summary:
+                summary = f"{doc_type.upper()}: {doc_name} - {content_summary}"
+            else:
+                summary = f"{doc_type.upper()}: {doc_name}"
+
+            summaries.append(summary)
+
+        return summaries
+
+    def has_documents(self) -> bool:
+        """Check if any documents are available for RAG"""
+        ready_docs = self.registry.get_ready_documents()
+        return len(ready_docs) > 0
 
 
 # Testing

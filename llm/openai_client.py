@@ -39,6 +39,7 @@ class OpenAIClient:
     def generate(
         self,
         prompt: str,
+        system: Optional[str] = None,
         temperature: float = 0.7,
         max_tokens: int = 2000,
         stop: Optional[list] = None
@@ -48,6 +49,7 @@ class OpenAIClient:
 
         Args:
             prompt: Input prompt
+            system: Optional system message
             temperature: Sampling temperature
             max_tokens: Maximum tokens to generate
             stop: Stop sequences
@@ -62,11 +64,15 @@ class OpenAIClient:
             "Authorization": f"Bearer {self.api_key}"
         }
 
+        # Build messages array with optional system message
+        messages = []
+        if system:
+            messages.append({"role": "system", "content": system})
+        messages.append({"role": "user", "content": prompt})
+
         payload = {
             "model": self.model_name,
-            "messages": [
-                {"role": "user", "content": prompt}
-            ],
+            "messages": messages,
             "temperature": temperature,
             "max_tokens": max_tokens,
             "stream": False

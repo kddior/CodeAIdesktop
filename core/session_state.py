@@ -58,6 +58,22 @@ class SessionState:
         self.created_at = datetime.now()
         self.updated_at = datetime.now()
 
+        # Credit simulation slots (persistent across turns)
+        self.credit_slots = None  # Will be CreditSlots object when in credit flow
+        self.in_credit_flow: bool = False  # Track if we're in credit simulation
+
+        # Card services slots (persistent across turns)
+        self.card_service_slots = None  # Will be CardServiceSlots object when in card flow
+        self.in_card_service_flow: bool = False  # Track if we're in card service flow
+
+        # Forex exchange slots (persistent across turns)
+        self.forex_slots = None  # Will be ForexSlots object when in forex flow
+        self.in_forex_flow: bool = False  # Track if we're in forex flow
+
+        # Payment incident slots (persistent across turns)
+        self.payment_incident_slots = None  # Will be PaymentIncidentSlots object when in incident flow
+        self.in_payment_incident_flow: bool = False  # Track if we're in incident flow
+
     def start_flow(self, flow_name: str, required_slots: List[str], initial_slots: Dict = None):
         """
         Start a new flow
@@ -173,6 +189,21 @@ class SessionState:
             "assistant": response,
             "intent": intent,
             "metadata": metadata or {}
+        })
+        self.updated_at = datetime.now()
+
+    def add_message(self, role: str, content: str):
+        """
+        Add a single message to conversation history
+        Compatible with OpenAI chat format
+
+        Args:
+            role: 'user' or 'assistant'
+            content: Message content
+        """
+        self.history.append({
+            "timestamp": datetime.now().isoformat(),
+            role: content
         })
         self.updated_at = datetime.now()
 

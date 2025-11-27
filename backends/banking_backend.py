@@ -66,8 +66,14 @@ class BankingBackend:
             ]
         }
 
-    def execute(self, intent: str, slots: Dict[str, Any]) -> Dict[str, Any]:
-        """Execute backend operation based on intent"""
+    def execute(self, intent: str, slots: Dict[str, Any], session=None) -> Dict[str, Any]:
+        """Execute backend operation based on intent
+
+        Args:
+            intent: The banking intent to execute
+            slots: Extracted slots/parameters
+            session: Optional session state for user context
+        """
 
         if intent == "CONSULTER_SOLDE":
             return self._consulter_solde(slots)
